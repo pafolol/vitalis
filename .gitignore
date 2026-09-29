@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+!.env.example
+assets-src/
+test-results/
+playwright-report/
+qa-screenshots/tmp/
+*.tsbuildinfo
+.DS_Store
