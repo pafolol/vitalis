@@ -92,7 +92,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md), which covers the engine r
 | **Web Workers** | The physiology engine runs off the main thread, so rendering stays smooth |
 | **Web Audio API** | Synthesised heart sounds, breath sounds and monitor tones |
 
-The human body is built at runtime from MakeHuman data (base mesh, skeleton, skin weights and morph targets). The project does not use X3D or the H-Anim skeleton standard.
+The human body is built at runtime from MakeHuman data (base mesh, skeleton, skin weights and morph targets).
 
 ### AI models
 
