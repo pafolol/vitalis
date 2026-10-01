@@ -12,6 +12,5 @@ qa-screenshots/tmp/
 *.tsbuildinfo
 .DS_Store
 
-# submission package (zip is uploaded to cloud storage)
-submission/*.zip
-submission/.stage/
+# submission package (generated; the zip is uploaded to cloud storage)
+submission/
