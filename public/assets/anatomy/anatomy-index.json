@@ -1,0 +1,5233 @@
+{
+ "version": 1,
+ "generator": "scripts/assets/build-anatomy.mjs",
+ "source": "BodyParts3D 4.0 (part-of), The Database Center for Life Science",
+ "license": "CC BY 4.0 (see ASSETS.md; OBJ headers state CC BY-SA 2.1 JP)",
+ "units": "m",
+ "axes": "+Y up, +Z anterior, +X patient left (BodyParts3D origin)",
+ "files": {
+  "skeleton": "skeleton.glb",
+  "muscle": "muscle.glb",
+  "superficial": "superficial.glb",
+  "cardiovascular": "cardiovascular.glb",
+  "respiratory": "respiratory.glb",
+  "digestive": "digestive.glb",
+  "nervous": "nervous.glb",
+  "organs": "organs.glb"
+ },
+ "landmarks": {
+  "shoulderL": [
+   0.1691589179531015,
+   1.3217877389469186,
+   0.07662306358039501
+  ],
+  "elbowL": [
+   0.2086695094193731,
+   1.0404849515074774,
+   0.06950841285288334
+  ],
+  "wristL": [
+   0.2514697392908936,
+   0.8125735928869655,
+   0.1144906582358556
+  ],
+  "knuckleL": [
+   0.2650400939686545,
+   0.7258281127132219,
+   0.13517762951809784
+  ],
+  "hipL": [
+   0.09592897510511085,
+   0.8163219936781965,
+   0.07677326390732768
+  ],
+  "kneeL": [
+   0.07481023747537095,
+   0.37857211797924367,
+   0.07636392139277216
+  ],
+  "ankleL": [
+   0.06729869104627162,
+   0.002645800611590256,
+   0.07523992447193059
+  ],
+  "toeL": [
+   0.1159689424709342,
+   -0.0595302232380571,
+   0.18324883898784375
+  ],
+  "eyeL": [
+   0.02919103203466809,
+   1.518067615096096,
+   0.15166029489721503
+  ],
+  "shoulderR": [
+   -0.17020664839896332,
+   1.3215412535461801,
+   0.07813840126140652
+  ],
+  "elbowR": [
+   -0.20905606532403959,
+   1.04038767987727,
+   0.06952697494933142
+  ],
+  "wristR": [
+   -0.25379235840651143,
+   0.8125148669657004,
+   0.11492660154859383
+  ],
+  "knuckleR": [
+   -0.2653239352835549,
+   0.7259166764992254,
+   0.1356238980812055
+  ],
+  "hipR": [
+   -0.09542846800725813,
+   0.8161710279082564,
+   0.0763475469949013
+  ],
+  "kneeR": [
+   -0.07427352285045746,
+   0.37887657897752375,
+   0.07553908602728962
+  ],
+  "ankleR": [
+   -0.06576075360684072,
+   0.002453111445907461,
+   0.07562135665093438
+  ],
+  "toeR": [
+   -0.11519440940835259,
+   -0.05839874100109393,
+   0.18234811384569516
+  ],
+  "eyeR": [
+   -0.030350309857084496,
+   1.518039300911814,
+   0.15178414066986862
+  ],
+  "sternalNotch": [
+   -0.0003079502116194025,
+   1.3227243064552225,
+   0.13876800046813104
+  ],
+  "xiphoid": [
+   -0.0002495297294340214,
+   1.1664439110920346,
+   0.20634460963051895
+  ],
+  "skullTop": [
+   -0.0017486862091417286,
+   1.6308525890635668,
+   0.07519884361652757
+  ],
+  "chin": [
+   -0.0009220282345803058,
+   1.426048446603182,
+   0.15789445783911632
+  ],
+  "c1": [
+   -0.0008913349894962234,
+   1.4713275487491158,
+   0.06845436066087525
+  ],
+  "t1": [
+   -0.0014098489333730013,
+   1.3621253709625003,
+   0.06021136546193005
+  ],
+  "l3": [
+   -0.0012799883300417965,
+   0.9905674199338472,
+   0.06753327219110847
+  ]
+ },
+ "knots": {
+  "hip": {
+   "y": 0.8162465107932264,
+   "front": 0.1916929930448532,
+   "back": -0.04151590168476105,
+   "half": 0,
+   "halfWidth": 0.09567872155618448
+  },
+  "navel": {
+   "y": 0.9905674199338472,
+   "front": 0.20994099974632263,
+   "back": -0.00006418370321625844,
+   "half": 0,
+   "halfWidth": 0.1368429958820343
+  },
+  "xiphoid": {
+   "y": 1.1664439110920346,
+   "front": 0.22363199293613434,
+   "back": -0.03183919936418533,
+   "half": 0,
+   "halfWidth": 0.1364859938621521
+  },
+  "notch": {
+   "y": 1.3227243064552225,
+   "front": 0.186598002910614,
+   "back": -0.036951400339603424,
+   "half": 0,
+   "halfWidth": 0.16968278317603241
+  }
+ },
+ "structures": [
+  {
+   "id": "skull",
+   "name": "Skull (cranium & facial bones)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA52734",
+    "FMA52735",
+    "FMA52736",
+    "FMA52740",
+    "FMA9710",
+    "FMA52789",
+    "FMA52788",
+    "FMA52739",
+    "FMA52738",
+    "FMA52893",
+    "FMA52892",
+    "FMA53650",
+    "FMA53649",
+    "FMA53648",
+    "FMA53647",
+    "FMA53646",
+    "FMA53645",
+    "FMA53656",
+    "FMA53655",
+    "FMA54738",
+    "FMA54737"
+   ],
+   "description": "Protects the brain and forms the face; the orbit, nasal cavity and jaw attachments are visible.",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.07618849724531174,
+     1.4639899730682373,
+     -0.018000999465584755
+    ],
+    "max": [
+     0.07485649734735489,
+     1.6362299919128418,
+     0.19083300232887268
+    ]
+   },
+   "vertices": 26164,
+   "triangles": 52316
+  },
+  {
+   "id": "mandible",
+   "name": "Mandible",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA52748",
+   "description": "The lower jaw; jaw thrust lifts it forwards to open an obstructed airway.",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.05384590104222298,
+     1.4216300249099731,
+     0.0898536965250969
+    ],
+    "max": [
+     0.05254150182008743,
+     1.506100058555603,
+     0.1738319993019104
+    ]
+   },
+   "vertices": 2427,
+   "triangles": 4850
+  },
+  {
+   "id": "hyoid",
+   "name": "Hyoid bone",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA52749",
+   "description": "U-shaped bone anchoring the tongue and larynx.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.01952419988811016,
+     1.4223699569702148,
+     0.09441869705915451
+    ],
+    "max": [
+     0.01828249916434288,
+     1.4408600330352783,
+     0.1289999932050705
+    ]
+   },
+   "vertices": 597,
+   "triangles": 2380
+  },
+  {
+   "id": "vertebra-atlas",
+   "name": "Atlas (C1)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12519",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.04136459901928902,
+     1.4622100591659546,
+     0.040595799684524536
+    ],
+    "max": [
+     0.04023069888353348,
+     1.4814300537109375,
+     0.08764419704675674
+    ]
+   },
+   "vertices": 985,
+   "triangles": 1978
+  },
+  {
+   "id": "vertebra-axis",
+   "name": "Axis (C2)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12520",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.025961600244045258,
+     1.433169960975647,
+     0.036670900881290436
+    ],
+    "max": [
+     0.024574199691414833,
+     1.478350043296814,
+     0.08653909713029861
+    ]
+   },
+   "vertices": 1117,
+   "triangles": 2242
+  },
+  {
+   "id": "vertebra-c-third",
+   "name": "Third cervical vertebra",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12521",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.02984279952943325,
+     1.4170000553131104,
+     0.03813309967517853
+    ],
+    "max": [
+     0.028539299964904785,
+     1.445739984512329,
+     0.08781319856643677
+    ]
+   },
+   "vertices": 990,
+   "triangles": 1988
+  },
+  {
+   "id": "vertebra-c-fourth",
+   "name": "Fourth cervical vertebra",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12522",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.027753399685025215,
+     1.4046000242233276,
+     0.04069359973073006
+    ],
+    "max": [
+     0.026377499103546143,
+     1.4321399927139282,
+     0.08910810202360153
+    ]
+   },
+   "vertices": 1187,
+   "triangles": 2382
+  },
+  {
+   "id": "vertebra-c-fifth",
+   "name": "Fifth cervical vertebra",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12523",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.029697800055146217,
+     1.3937699794769287,
+     0.03608249872922897
+    ],
+    "max": [
+     0.02833320014178753,
+     1.41798996925354,
+     0.0907725989818573
+    ]
+   },
+   "vertices": 1078,
+   "triangles": 2164
+  },
+  {
+   "id": "vertebra-c-sixth",
+   "name": "Sixth cervical vertebra",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12524",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.031265199184417725,
+     1.3815900087356567,
+     0.029179399833083153
+    ],
+    "max": [
+     0.02994769997894764,
+     1.4047399759292603,
+     0.09167099744081497
+    ]
+   },
+   "vertices": 1159,
+   "triangles": 2326
+  },
+  {
+   "id": "vertebra-c-seventh",
+   "name": "Seventh cervical vertebra",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA12525",
+   "description": "Cervical vertebra; the cervical spine is immobilised when spinal injury is suspected.",
+   "mode": "neck",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.03322929888963699,
+     1.3647099733352661,
+     0.021266400814056396
+    ],
+    "max": [
+     0.03193160146474838,
+     1.3918399810791016,
+     0.09003189951181412
+    ]
+   },
+   "vertices": 878,
+   "triangles": 1764
+  },
+  {
+   "id": "vertebra-t1",
+   "name": "First thoracic vertebra (T1)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9165",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.037383001297712326,
+     1.3472199440002441,
+     0.017086699604988098
+    ],
+    "max": [
+     0.035916201770305634,
+     1.3768999576568604,
+     0.08687189966440201
+    ]
+   },
+   "vertices": 825,
+   "triangles": 1650
+  },
+  {
+   "id": "vertebra-t2",
+   "name": "Second thoracic vertebra (T2)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9187",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.0359220989048481,
+     1.3265899419784546,
+     0.012120500206947327
+    ],
+    "max": [
+     0.03457840159535408,
+     1.360360026359558,
+     0.08267579972743988
+    ]
+   },
+   "vertices": 934,
+   "triangles": 1868
+  },
+  {
+   "id": "vertebra-t3",
+   "name": "Third thoracic vertebra (T3)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9209",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.03296609967947006,
+     1.3022300004959106,
+     0.0013601100072264671
+    ],
+    "max": [
+     0.03184090182185173,
+     1.3418500423431396,
+     0.07673630118370056
+    ]
+   },
+   "vertices": 999,
+   "triangles": 1998
+  },
+  {
+   "id": "vertebra-t4",
+   "name": "Fourth thoracic vertebra (T4)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9248",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.035461701452732086,
+     1.2777400016784668,
+     0.0001978960062842816
+    ],
+    "max": [
+     0.03428199887275696,
+     1.3214099407196045,
+     0.06960490345954895
+    ]
+   },
+   "vertices": 1005,
+   "triangles": 2010
+  },
+  {
+   "id": "vertebra-t5",
+   "name": "Fifth thoracic vertebra (T5)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9922",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.036151498556137085,
+     1.2397700548171997,
+     -0.000018549899323261343
+    ],
+    "max": [
+     0.03488970175385475,
+     1.2972700595855713,
+     0.06600899994373322
+    ]
+   },
+   "vertices": 1117,
+   "triangles": 2234
+  },
+  {
+   "id": "vertebra-t6",
+   "name": "Sixth thoracic vertebra (T6)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9945",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.03642269968986511,
+     1.209380030632019,
+     0.0011924300342798233
+    ],
+    "max": [
+     0.035033900290727615,
+     1.2690800428390503,
+     0.0652208998799324
+    ]
+   },
+   "vertices": 1096,
+   "triangles": 2192
+  },
+  {
+   "id": "vertebra-t7",
+   "name": "Seventh thoracic vertebra (T7)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9968",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.037226300686597824,
+     1.1792999505996704,
+     0.000671493005938828
+    ],
+    "max": [
+     0.03632060065865517,
+     1.2417999505996704,
+     0.06697919964790344
+    ]
+   },
+   "vertices": 1247,
+   "triangles": 2494
+  },
+  {
+   "id": "vertebra-t8",
+   "name": "Eighth thoracic vertebra (T8)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA9991",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.033659398555755615,
+     1.153749942779541,
+     0.0009317959775216877
+    ],
+    "max": [
+     0.032152701169252396,
+     1.2130500078201294,
+     0.07202760130167007
+    ]
+   },
+   "vertices": 1178,
+   "triangles": 2356
+  },
+  {
+   "id": "vertebra-t9",
+   "name": "Ninth thoracic vertebra (T9)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA10014",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.034394800662994385,
+     1.1266299486160278,
+     0.006156059913337231
+    ],
+    "max": [
+     0.03299799934029579,
+     1.1848399639129639,
+     0.07765290141105652
+    ]
+   },
+   "vertices": 1252,
+   "triangles": 2504
+  },
+  {
+   "id": "vertebra-t10",
+   "name": "Tenth thoracic vertebra (T10)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA10037",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.03365679830312729,
+     1.099769949913025,
+     0.007822499610483646
+    ],
+    "max": [
+     0.032245200127363205,
+     1.1571300029754639,
+     0.08405780047178268
+    ]
+   },
+   "vertices": 1342,
+   "triangles": 2684
+  },
+  {
+   "id": "vertebra-t11",
+   "name": "Eleventh thoracic vertebra (T11)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA10059",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.026760999113321304,
+     1.075719952583313,
+     0.013008899986743927
+    ],
+    "max": [
+     0.025559300556778908,
+     1.1292699575424194,
+     0.09253239631652832
+    ]
+   },
+   "vertices": 1275,
+   "triangles": 2550
+  },
+  {
+   "id": "vertebra-t12",
+   "name": "Twelfth thoracic vertebra (T12)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA10081",
+   "description": "Thoracic vertebra articulating with a pair of ribs.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.022386400029063225,
+     1.0499600172042847,
+     0.022560900077223778
+    ],
+    "max": [
+     0.02105480059981346,
+     1.1015900373458862,
+     0.10138499736785889
+    ]
+   },
+   "vertices": 1332,
+   "triangles": 2664
+  },
+  {
+   "id": "vertebra-l1",
+   "name": "First lumbar vertebra (L1)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13072",
+   "description": "Lumbar vertebra; lumbar puncture is performed below the end of the spinal cord (L3–L5).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.03577980026602745,
+     1.0152000188827515,
+     0.0292224008589983
+    ],
+    "max": [
+     0.03446140140295029,
+     1.0719799995422363,
+     0.10948000103235245
+    ]
+   },
+   "vertices": 1447,
+   "triangles": 2894
+  },
+  {
+   "id": "vertebra-l2",
+   "name": "Second lumbar vertebra (L2)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13073",
+   "description": "Lumbar vertebra; lumbar puncture is performed below the end of the spinal cord (L3–L5).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.04035089910030365,
+     0.9923160076141357,
+     0.03434880077838898
+    ],
+    "max": [
+     0.0390608012676239,
+     1.0397599935531616,
+     0.11472000181674957
+    ]
+   },
+   "vertices": 1542,
+   "triangles": 3084
+  },
+  {
+   "id": "vertebra-l3",
+   "name": "Third lumbar vertebra (L3)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13074",
+   "description": "Lumbar vertebra; lumbar puncture is performed below the end of the spinal cord (L3–L5).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.040202900767326355,
+     0.9676929712295532,
+     0.029513999819755554
+    ],
+    "max": [
+     0.03884100168943405,
+     1.0097299814224243,
+     0.11535300314426422
+    ]
+   },
+   "vertices": 1559,
+   "triangles": 3118
+  },
+  {
+   "id": "vertebra-l4",
+   "name": "Fourth lumbar vertebra (L4)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13075",
+   "description": "Lumbar vertebra; lumbar puncture is performed below the end of the spinal cord (L3–L5).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.04276610165834427,
+     0.9386640191078186,
+     0.026156200096011162
+    ],
+    "max": [
+     0.04141540080308914,
+     0.9834020137786865,
+     0.11040499806404114
+    ]
+   },
+   "vertices": 1694,
+   "triangles": 3388
+  },
+  {
+   "id": "vertebra-l5",
+   "name": "Fifth lumbar vertebra (L5)",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13076",
+   "description": "Lumbar vertebra; lumbar puncture is performed below the end of the spinal cord (L3–L5).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.051000699400901794,
+     0.9045950174331665,
+     0.018245000392198563
+    ],
+    "max": [
+     0.04957360029220581,
+     0.9548329710960388,
+     0.09907650202512741
+    ]
+   },
+   "vertices": 1823,
+   "triangles": 3646
+  },
+  {
+   "id": "sacrum",
+   "name": "Sacrum",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA16202",
+   "description": "Fused sacral vertebrae forming the back of the pelvis.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.059591200202703476,
+     0.7828369736671448,
+     -0.00725375022739172
+    ],
+    "max": [
+     0.05820289999246597,
+     0.9272000193595886,
+     0.08139640092849731
+    ]
+   },
+   "vertices": 4420,
+   "triangles": 8868
+  },
+  {
+   "id": "intervertebral-discs",
+   "name": "Intervertebral discs",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA10446",
+    "FMA25058",
+    "FMA13896",
+    "FMA13897",
+    "FMA13898",
+    "FMA13899",
+    "FMA13900",
+    "FMA10458",
+    "FMA13495",
+    "FMA13500",
+    "FMA13501",
+    "FMA13502",
+    "FMA13503",
+    "FMA13504",
+    "FMA13505",
+    "FMA13506",
+    "FMA13507",
+    "FMA13508",
+    "FMA16033",
+    "FMA16034",
+    "FMA16035",
+    "FMA16036",
+    "FMA16037"
+   ],
+   "description": "Fibrocartilaginous discs between vertebral bodies.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.02513979934155941,
+     0.8948259949684143,
+     0.030614400282502174
+    ],
+    "max": [
+     0.02379940077662468,
+     1.4508899450302124,
+     0.1159840002655983
+    ]
+   },
+   "vertices": 6752,
+   "triangles": 13450
+  },
+  {
+   "id": "rib-l1",
+   "name": "Left first rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA7987",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.01380040030926466,
+     1.3100700378417969,
+     0.06441699713468552
+    ],
+    "max": [
+     0.06845460087060928,
+     1.370479941368103,
+     0.1304199993610382
+    ]
+   },
+   "vertices": 1240,
+   "triangles": 2476
+  },
+  {
+   "id": "rib-l2",
+   "name": "Left second rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8012",
+   "description": "The 2nd intercostal space (below this rib) in the mid-clavicular line is a needle-decompression site.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.014770399779081345,
+     1.2735300064086914,
+     0.05064680054783821
+    ],
+    "max": [
+     0.09563940018415451,
+     1.35903000831604,
+     0.16712500154972076
+    ]
+   },
+   "vertices": 1118,
+   "triangles": 2232
+  },
+  {
+   "id": "rib-l3",
+   "name": "Left third rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8039",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.01279080007225275,
+     1.2438900470733643,
+     0.03687550127506256
+    ],
+    "max": [
+     0.10761000216007233,
+     1.3359700441360474,
+     0.17924000322818756
+    ]
+   },
+   "vertices": 1090,
+   "triangles": 2176
+  },
+  {
+   "id": "rib-l4",
+   "name": "Left fourth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8148",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.012905700132250786,
+     1.21110999584198,
+     0.023207200691103935
+    ],
+    "max": [
+     0.11624299734830856,
+     1.31535005569458,
+     0.19219499826431274
+    ]
+   },
+   "vertices": 1329,
+   "triangles": 2654
+  },
+  {
+   "id": "rib-l5",
+   "name": "Left fifth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8093",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.014004499651491642,
+     1.1721800565719604,
+     0.012735599651932716
+    ],
+    "max": [
+     0.1257530003786087,
+     1.2912800312042236,
+     0.1976879984140396
+    ]
+   },
+   "vertices": 1458,
+   "triangles": 2912
+  },
+  {
+   "id": "rib-l6",
+   "name": "Left sixth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8202",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.012805599719285965,
+     1.1378999948501587,
+     0.003645830089226365
+    ],
+    "max": [
+     0.1330540031194687,
+     1.2668100595474243,
+     0.19340799748897552
+    ]
+   },
+   "vertices": 1541,
+   "triangles": 3078
+  },
+  {
+   "id": "rib-l7",
+   "name": "Left seventh rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8256",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.012382499873638153,
+     1.1052099466323853,
+     0.004509930033236742
+    ],
+    "max": [
+     0.13575999438762665,
+     1.2402499914169312,
+     0.1802079975605011
+    ]
+   },
+   "vertices": 1506,
+   "triangles": 3008
+  },
+  {
+   "id": "rib-l8",
+   "name": "Left eighth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8310",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.012370400130748749,
+     1.0746500492095947,
+     0.00457222992554307
+    ],
+    "max": [
+     0.13162000477313995,
+     1.2112599611282349,
+     0.16266900300979614
+    ]
+   },
+   "vertices": 1252,
+   "triangles": 2500
+  },
+  {
+   "id": "rib-l9",
+   "name": "Left ninth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8391",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.014592000283300877,
+     1.050089955329895,
+     0.007570019923150539
+    ],
+    "max": [
+     0.1277810037136078,
+     1.1853599548339844,
+     0.1355929970741272
+    ]
+   },
+   "vertices": 1138,
+   "triangles": 2272
+  },
+  {
+   "id": "rib-l10",
+   "name": "Left tenth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8472",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.015562299638986588,
+     1.0229599475860596,
+     0.011385899968445301
+    ],
+    "max": [
+     0.12234900146722794,
+     1.1589699983596802,
+     0.11767099797725677
+    ]
+   },
+   "vertices": 1025,
+   "triangles": 2046
+  },
+  {
+   "id": "rib-l11",
+   "name": "Left eleventh rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8532",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.01632869988679886,
+     1.008080005645752,
+     0.017967499792575836
+    ],
+    "max": [
+     0.11000099778175354,
+     1.121709942817688,
+     0.09597939997911453
+    ]
+   },
+   "vertices": 975,
+   "triangles": 1946
+  },
+  {
+   "id": "rib-l12",
+   "name": "Left twelfth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8534",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.016890300437808037,
+     1.011330008506775,
+     0.028014900162816048
+    ],
+    "max": [
+     0.08522109687328339,
+     1.0891599655151367,
+     0.06606979668140411
+    ]
+   },
+   "vertices": 920,
+   "triangles": 1836
+  },
+  {
+   "id": "costal-cartilages-l",
+   "name": "Left costal cartilages",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA8005",
+    "FMA8031",
+    "FMA8058",
+    "FMA8167",
+    "FMA8112",
+    "FMA8221",
+    "FMA8275"
+   ],
+   "description": "Cartilage joining the ribs to the sternum; it gives the chest wall its compliance during CPR.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.003328959923237562,
+     1.102579951286316,
+     0.12232399731874466
+    ],
+    "max": [
+     0.10845699906349182,
+     1.3202500343322754,
+     0.2131900042295456
+    ]
+   },
+   "vertices": 1571,
+   "triangles": 3114
+  },
+  {
+   "id": "rib-r1",
+   "name": "Right first rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA7857",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.06976410001516342,
+     1.3100700378417969,
+     0.06443849951028824
+    ],
+    "max": [
+     -0.015115800313651562,
+     1.370479941368103,
+     0.13041800260543823
+    ]
+   },
+   "vertices": 1230,
+   "triangles": 2456
+  },
+  {
+   "id": "rib-r2",
+   "name": "Right second rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA7882",
+   "description": "The 2nd intercostal space (below this rib) in the mid-clavicular line is a needle-decompression site.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.09695690125226974,
+     1.273550033569336,
+     0.05065289884805679
+    ],
+    "max": [
+     -0.016049500554800034,
+     1.35903000831604,
+     0.16715699434280396
+    ]
+   },
+   "vertices": 1139,
+   "triangles": 2274
+  },
+  {
+   "id": "rib-r3",
+   "name": "Right third rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA7909",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.10894700139760971,
+     1.2438199520111084,
+     0.03682899847626686
+    ],
+    "max": [
+     -0.01407840009778738,
+     1.3359299898147583,
+     0.1792439967393875
+    ]
+   },
+   "vertices": 1090,
+   "triangles": 2176
+  },
+  {
+   "id": "rib-r4",
+   "name": "Right fourth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA7957",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.1175599992275238,
+     1.2110999822616577,
+     0.023238200694322586
+    ],
+    "max": [
+     -0.01501190010458231,
+     1.3153200149536133,
+     0.19218599796295166
+    ]
+   },
+   "vertices": 1326,
+   "triangles": 2648
+  },
+  {
+   "id": "rib-r5",
+   "name": "Right fifth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8066",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.12706999480724335,
+     1.172160029411316,
+     0.01275660004466772
+    ],
+    "max": [
+     -0.015354899689555168,
+     1.2913099527359009,
+     0.1976509988307953
+    ]
+   },
+   "vertices": 1458,
+   "triangles": 2912
+  },
+  {
+   "id": "rib-r6",
+   "name": "Right sixth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8175",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.1343490034341812,
+     1.1379300355911255,
+     0.00364141003228724
+    ],
+    "max": [
+     -0.01485070027410984,
+     1.2656500339508057,
+     0.19350500404834747
+    ]
+   },
+   "vertices": 1538,
+   "triangles": 3072
+  },
+  {
+   "id": "rib-r7",
+   "name": "Right seventh rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8229",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.1370750069618225,
+     1.1052099466323853,
+     0.004513230174779892
+    ],
+    "max": [
+     -0.013689699582755566,
+     1.2402299642562866,
+     0.18020300567150116
+    ]
+   },
+   "vertices": 1506,
+   "triangles": 3008
+  },
+  {
+   "id": "rib-r8",
+   "name": "Right eighth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8283",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.1329679936170578,
+     1.0746599435806274,
+     0.0045720902271568775
+    ],
+    "max": [
+     -0.01367649994790554,
+     1.2113100290298462,
+     0.16267800331115723
+    ]
+   },
+   "vertices": 1252,
+   "triangles": 2500
+  },
+  {
+   "id": "rib-r9",
+   "name": "Right ninth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8364",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.12909799814224243,
+     1.050089955329895,
+     0.007529070135205984
+    ],
+    "max": [
+     -0.015864599496126175,
+     1.1852999925613403,
+     0.1356319934129715
+    ]
+   },
+   "vertices": 1138,
+   "triangles": 2272
+  },
+  {
+   "id": "rib-r10",
+   "name": "Right tenth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8445",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.12361700087785721,
+     1.0230000019073486,
+     0.011359300464391708
+    ],
+    "max": [
+     -0.01689779944717884,
+     1.1589000225067139,
+     0.1176529973745346
+    ]
+   },
+   "vertices": 1025,
+   "triangles": 2046
+  },
+  {
+   "id": "rib-r11",
+   "name": "Right eleventh rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8531",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.11135300248861313,
+     1.008080005645752,
+     0.017961999401450157
+    ],
+    "max": [
+     -0.017596300691366196,
+     1.1217299699783325,
+     0.09601829946041107
+    ]
+   },
+   "vertices": 983,
+   "triangles": 1962
+  },
+  {
+   "id": "rib-r12",
+   "name": "Right twelfth rib",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA8533",
+   "description": "Rib of the thoracic cage; rib fractures impair ventilation and can injure the lung.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.08653320372104645,
+     1.0113400220870972,
+     0.02799220010638237
+    ],
+    "max": [
+     -0.01821249909698963,
+     1.0891499519348145,
+     0.06609729677438736
+    ]
+   },
+   "vertices": 947,
+   "triangles": 1890
+  },
+  {
+   "id": "costal-cartilages-r",
+   "name": "Right costal cartilages",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA7875",
+    "FMA7886",
+    "FMA7913",
+    "FMA7976",
+    "FMA8070",
+    "FMA8194",
+    "FMA8248"
+   ],
+   "description": "Cartilage joining the ribs to the sternum; it gives the chest wall its compliance during CPR.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.10990899801254272,
+     1.102579951286316,
+     0.12217099964618683
+    ],
+    "max": [
+     -0.004507630132138729,
+     1.3202199935913086,
+     0.21317599713802338
+    ]
+   },
+   "vertices": 1558,
+   "triangles": 3088
+  },
+  {
+   "id": "sternum",
+   "name": "Sternum",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA7486",
+    "FMA7487",
+    "FMA7488"
+   ],
+   "description": "Breastbone. CPR compressions are delivered on the lower half of the sternum, 5–6 cm deep in adults.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.027449699118733406,
+     1.1640199422836304,
+     0.1308010071516037
+    ],
+    "max": [
+     0.027449699118733406,
+     1.3252500295639038,
+     0.21383200585842133
+    ]
+   },
+   "vertices": 2807,
+   "triangles": 5626
+  },
+  {
+   "id": "clavicle-l",
+   "name": "Left clavicle",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13323",
+   "description": "Collarbone; the mid-clavicular line is a landmark for chest procedures.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bone": "clavicle.L",
+   "bounds": {
+    "min": [
+     0.008378730155527592,
+     1.3085299730300903,
+     0.054387498646974564
+    ],
+    "max": [
+     0.1439419984817505,
+     1.355180025100708,
+     0.1470779925584793
+    ]
+   },
+   "vertices": 576,
+   "triangles": 1148
+  },
+  {
+   "id": "scapula-l",
+   "name": "Left scapula",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13396",
+   "description": "Shoulder blade.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bone": "clavicle.L",
+   "bounds": {
+    "min": [
+     0.05710789933800697,
+     1.1839900016784668,
+     -0.00505717983469367
+    ],
+    "max": [
+     0.16646400094032288,
+     1.3498400449752808,
+     0.10282199829816818
+    ]
+   },
+   "vertices": 2812,
+   "triangles": 5620
+  },
+  {
+   "id": "humerus-l",
+   "name": "Left humerus",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23131",
+   "description": "Upper-arm bone; the proximal humerus is an intraosseous access site.",
+   "mode": "seg:upperArmL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.1400730013847351,
+     1.0292099714279175,
+     0.0510559007525444
+    ],
+    "max": [
+     0.24075999855995178,
+     1.3365199565887451,
+     0.10022900253534317
+    ]
+   },
+   "vertices": 1177,
+   "triangles": 2350
+  },
+  {
+   "id": "radius-ulna-l",
+   "name": "Left radius and ulna",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA23465",
+    "FMA23468"
+   ],
+   "description": "Forearm bones; the radial artery runs along the radius at the wrist.",
+   "mode": "seg:forearmL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.19689199328422546,
+     0.8050159811973572,
+     0.04455230012536049
+    ],
+    "max": [
+     0.27914300560951233,
+     1.0524699687957764,
+     0.127251997590065
+    ]
+   },
+   "vertices": 647,
+   "triangles": 1286
+  },
+  {
+   "id": "carpals-l",
+   "name": "Left carpal bones",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24436",
+    "FMA24438",
+    "FMA24440",
+    "FMA24442",
+    "FMA24444",
+    "FMA24445",
+    "FMA24447",
+    "FMA24449"
+   ],
+   "description": "Wrist bones.",
+   "mode": "seg:handL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.2318210005760193,
+     0.7812560200691223,
+     0.11057300120592117
+    ],
+    "max": [
+     0.2817949950695038,
+     0.8116819858551025,
+     0.1375889927148819
+    ]
+   },
+   "vertices": 1360,
+   "triangles": 2688
+  },
+  {
+   "id": "metacarpals-l",
+   "name": "Left metacarpals",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24465",
+    "FMA24467",
+    "FMA24469",
+    "FMA24471",
+    "FMA24473"
+   ],
+   "description": "Bones of the palm.",
+   "mode": "seg:handL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.22527000308036804,
+     0.7190420031547546,
+     0.11241000145673752
+    ],
+    "max": [
+     0.3096249997615814,
+     0.7974069714546204,
+     0.15378199517726898
+    ]
+   },
+   "vertices": 1472,
+   "triangles": 2924
+  },
+  {
+   "id": "phalanx-l-1-2",
+   "name": "Proximal phalanx of left thumb",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA65470",
+   "description": "Finger bone.",
+   "mode": "seg:finger1-2.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.29869401454925537,
+     0.7355290055274963,
+     0.1426289975643158
+    ],
+    "max": [
+     0.3186190128326416,
+     0.7671679854393005,
+     0.1647530049085617
+    ]
+   },
+   "vertices": 174,
+   "triangles": 344
+  },
+  {
+   "id": "phalanx-l-1-3",
+   "name": "Distal phalanx of left thumb",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23951",
+   "description": "Finger bone.",
+   "mode": "seg:finger1-3.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.3108380138874054,
+     0.7192429900169373,
+     0.15724100172519684
+    ],
+    "max": [
+     0.32393500208854675,
+     0.742231011390686,
+     0.1732729971408844
+    ]
+   },
+   "vertices": 136,
+   "triangles": 268
+  },
+  {
+   "id": "phalanx-l-2-1",
+   "name": "Proximal phalanx of left index finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA71915",
+   "description": "Finger bone.",
+   "mode": "seg:finger2-1.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.280813992023468,
+     0.6857209801673889,
+     0.13408899307250977
+    ],
+    "max": [
+     0.30281001329421997,
+     0.7233560085296631,
+     0.1570570021867752
+    ]
+   },
+   "vertices": 198,
+   "triangles": 392
+  },
+  {
+   "id": "phalanx-l-2-2",
+   "name": "Middle phalanx of left index finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23938",
+   "description": "Finger bone.",
+   "mode": "seg:finger2-2.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.294389009475708,
+     0.6709750294685364,
+     0.1512559950351715
+    ],
+    "max": [
+     0.30900099873542786,
+     0.6914529800415039,
+     0.17205700278282166
+    ]
+   },
+   "vertices": 154,
+   "triangles": 304
+  },
+  {
+   "id": "phalanx-l-2-3",
+   "name": "Distal phalanx of left index finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23953",
+   "description": "Finger bone.",
+   "mode": "seg:finger2-3.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.3012610077857971,
+     0.6618509888648987,
+     0.1696140021085739
+    ],
+    "max": [
+     0.31125399470329285,
+     0.6755669713020325,
+     0.18671099841594696
+    ]
+   },
+   "vertices": 166,
+   "triangles": 328
+  },
+  {
+   "id": "phalanx-l-3-1",
+   "name": "Proximal phalanx of left middle finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA71908",
+   "description": "Finger bone.",
+   "mode": "seg:finger3-1.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.2592009902000427,
+     0.6842989921569824,
+     0.13519200682640076
+    ],
+    "max": [
+     0.27737998962402344,
+     0.7249659895896912,
+     0.16409599781036377
+    ]
+   },
+   "vertices": 230,
+   "triangles": 456
+  },
+  {
+   "id": "phalanx-l-3-2",
+   "name": "Middle phalanx of left middle finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23940",
+   "description": "Finger bone.",
+   "mode": "seg:finger3-2.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.2665170133113861,
+     0.6624090075492859,
+     0.1578579992055893
+    ],
+    "max": [
+     0.28020501136779785,
+     0.6877670288085938,
+     0.1808760017156601
+    ]
+   },
+   "vertices": 194,
+   "triangles": 384
+  },
+  {
+   "id": "phalanx-l-3-3",
+   "name": "Distal phalanx of left middle finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23955",
+   "description": "Finger bone.",
+   "mode": "seg:finger3-3.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.27136099338531494,
+     0.6533669829368591,
+     0.17808400094509125
+    ],
+    "max": [
+     0.2808539867401123,
+     0.6663709878921509,
+     0.19508899748325348
+    ]
+   },
+   "vertices": 135,
+   "triangles": 266
+  },
+  {
+   "id": "phalanx-l-4-1",
+   "name": "Proximal phalanx of left ring finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA71916",
+   "description": "Finger bone.",
+   "mode": "seg:finger4-1.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.24049200117588043,
+     0.6900519728660583,
+     0.1357090026140213
+    ],
+    "max": [
+     0.25388601422309875,
+     0.728958010673523,
+     0.16192999482154846
+    ]
+   },
+   "vertices": 190,
+   "triangles": 376
+  },
+  {
+   "id": "phalanx-l-4-2",
+   "name": "Middle phalanx of left ring finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23942",
+   "description": "Finger bone.",
+   "mode": "seg:finger4-2.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.24278199672698975,
+     0.66982102394104,
+     0.1567939966917038
+    ],
+    "max": [
+     0.25453200936317444,
+     0.6936839818954468,
+     0.18054699897766113
+    ]
+   },
+   "vertices": 172,
+   "triangles": 340
+  },
+  {
+   "id": "phalanx-l-4-3",
+   "name": "Distal phalanx of left ring finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23957",
+   "description": "Finger bone.",
+   "mode": "seg:finger4-3.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.24529999494552612,
+     0.6648120284080505,
+     0.1787559986114502
+    ],
+    "max": [
+     0.25364598631858826,
+     0.6738989949226379,
+     0.19436000287532806
+    ]
+   },
+   "vertices": 99,
+   "triangles": 194
+  },
+  {
+   "id": "phalanx-l-5-1",
+   "name": "Proximal phalanx of left little finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA66791",
+   "description": "Finger bone.",
+   "mode": "seg:finger5-1.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.22222700715065002,
+     0.7033849954605103,
+     0.1386680006980896
+    ],
+    "max": [
+     0.2362940013408661,
+     0.7357900142669678,
+     0.15946100652217865
+    ]
+   },
+   "vertices": 139,
+   "triangles": 274
+  },
+  {
+   "id": "phalanx-l-5-2",
+   "name": "Middle phalanx of left little finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23944",
+   "description": "Finger bone.",
+   "mode": "seg:finger5-2.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.2189210057258606,
+     0.687466025352478,
+     0.15491199493408203
+    ],
+    "max": [
+     0.2302989959716797,
+     0.7070609927177429,
+     0.1714790016412735
+    ]
+   },
+   "vertices": 129,
+   "triangles": 254
+  },
+  {
+   "id": "phalanx-l-5-3",
+   "name": "Distal phalanx of left little finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23959",
+   "description": "Finger bone.",
+   "mode": "seg:finger5-3.L",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.21889400482177734,
+     0.6766279935836792,
+     0.1684200018644333
+    ],
+    "max": [
+     0.22715499997138977,
+     0.6893090009689331,
+     0.18228399753570557
+    ]
+   },
+   "vertices": 101,
+   "triangles": 198
+  },
+  {
+   "id": "hip-bone-l",
+   "name": "Left hip bone",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA16587",
+   "description": "Pelvic bone (ilium, ischium, pubis). Pelvic fractures can cause life-threatening haemorrhage.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bone": "root",
+   "bounds": {
+    "min": [
+     0.0027503101155161858,
+     0.7519509792327881,
+     0.0013149400474503636
+    ],
+    "max": [
+     0.14475399255752563,
+     0.9580900073051453,
+     0.1390949934720993
+    ]
+   },
+   "vertices": 1136,
+   "triangles": 2272
+  },
+  {
+   "id": "femur-l",
+   "name": "Left femur",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24475",
+   "description": "Thigh bone; a femoral shaft fracture can conceal 1–1.5 L of blood.",
+   "mode": "seg:thighL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.0319661982357502,
+     0.3680559992790222,
+     0.04948220029473305
+    ],
+    "max": [
+     0.15023699402809143,
+     0.8342390060424805,
+     0.11227600276470184
+    ]
+   },
+   "vertices": 1132,
+   "triangles": 2260
+  },
+  {
+   "id": "patella-l",
+   "name": "Left patella",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24487",
+   "description": "Kneecap.",
+   "mode": "seg:thighL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.06059249863028526,
+     0.36149701476097107,
+     0.10090100020170212
+    ],
+    "max": [
+     0.10222399979829788,
+     0.40076300501823425,
+     0.12275099754333496
+    ]
+   },
+   "vertices": 156,
+   "triangles": 308
+  },
+  {
+   "id": "tibia-fibula-l",
+   "name": "Left tibia and fibula",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24478",
+    "FMA24481"
+   ],
+   "description": "Leg bones; the flat anteromedial proximal tibia is the commonest intraosseous access site.",
+   "mode": "seg:legL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.03503419831395149,
+     -0.025190599262714386,
+     0.048563599586486816
+    ],
+    "max": [
+     0.12010800093412399,
+     0.37386199831962585,
+     0.11451499909162521
+    ]
+   },
+   "vertices": 1030,
+   "triangles": 2052
+  },
+  {
+   "id": "foot-bones-l",
+   "name": "Left foot bones",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24483",
+    "FMA24498",
+    "FMA24501",
+    "FMA24529",
+    "FMA24522",
+    "FMA24524",
+    "FMA24526",
+    "FMA24508",
+    "FMA24510",
+    "FMA24512",
+    "FMA24514",
+    "FMA24516",
+    "FMA43254",
+    "FMA32651",
+    "FMA32635",
+    "FMA32643",
+    "FMA32653",
+    "FMA32637",
+    "FMA32645",
+    "FMA32655",
+    "FMA32639",
+    "FMA32647",
+    "FMA32657",
+    "FMA32641",
+    "FMA230988",
+    "FMA32659"
+   ],
+   "description": "Tarsal, metatarsal and toe bones.",
+   "mode": "seg:footL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.045010000467300415,
+     -0.07047989964485168,
+     0.024206800386309624
+    ],
+    "max": [
+     0.1693580001592636,
+     0.003098109969869256,
+     0.23591899871826172
+    ]
+   },
+   "vertices": 5307,
+   "triangles": 10510
+  },
+  {
+   "id": "clavicle-r",
+   "name": "Right clavicle",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13322",
+   "description": "Collarbone; the mid-clavicular line is a landmark for chest procedures.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bone": "clavicle.R",
+   "bounds": {
+    "min": [
+     -0.1452769935131073,
+     1.3086199760437012,
+     0.05441249907016754
+    ],
+    "max": [
+     -0.009661650285124779,
+     1.3554400205612183,
+     0.14694799482822418
+    ]
+   },
+   "vertices": 559,
+   "triangles": 1114
+  },
+  {
+   "id": "scapula-r",
+   "name": "Right scapula",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA13395",
+   "description": "Shoulder blade.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bone": "clavicle.R",
+   "bounds": {
+    "min": [
+     -0.1664550006389618,
+     1.1839799880981445,
+     -0.005067870020866394
+    ],
+    "max": [
+     -0.05708099901676178,
+     1.3497899770736694,
+     0.10284700244665146
+    ]
+   },
+   "vertices": 2619,
+   "triangles": 5234
+  },
+  {
+   "id": "humerus-r",
+   "name": "Right humerus",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA23130",
+   "description": "Upper-arm bone; the proximal humerus is an intraosseous access site.",
+   "mode": "seg:upperArmR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.2407439947128296,
+     1.0294400453567505,
+     0.05103909969329834
+    ],
+    "max": [
+     -0.1401520073413849,
+     1.3365399837493896,
+     0.1002189964056015
+    ]
+   },
+   "vertices": 1204,
+   "triangles": 2404
+  },
+  {
+   "id": "radius-ulna-r",
+   "name": "Right radius and ulna",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA23464",
+    "FMA23467"
+   ],
+   "description": "Forearm bones; the radial artery runs along the radius at the wrist.",
+   "mode": "seg:forearmR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.2795349955558777,
+     0.8051729798316956,
+     0.04479920119047165
+    ],
+    "max": [
+     -0.1968809962272644,
+     1.0524499416351318,
+     0.12690800428390503
+    ]
+   },
+   "vertices": 673,
+   "triangles": 1338
+  },
+  {
+   "id": "carpals-r",
+   "name": "Right carpal bones",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24435",
+    "FMA24437",
+    "FMA24439",
+    "FMA24441",
+    "FMA24443",
+    "FMA23725",
+    "FMA24446",
+    "FMA24448"
+   ],
+   "description": "Wrist bones.",
+   "mode": "seg:handR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.2817220091819763,
+     0.7812929749488831,
+     0.11053399741649628
+    ],
+    "max": [
+     -0.23195600509643555,
+     0.8117899894714355,
+     0.1376579999923706
+    ]
+   },
+   "vertices": 1352,
+   "triangles": 2672
+  },
+  {
+   "id": "metacarpals-r",
+   "name": "Right metacarpals",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24464",
+    "FMA24466",
+    "FMA24468",
+    "FMA24470",
+    "FMA24472"
+   ],
+   "description": "Bones of the palm.",
+   "mode": "seg:handR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.30957698822021484,
+     0.718870997428894,
+     0.1123260036110878
+    ],
+    "max": [
+     -0.22520199418067932,
+     0.7972379922866821,
+     0.15386100113391876
+    ]
+   },
+   "vertices": 1445,
+   "triangles": 2870
+  },
+  {
+   "id": "phalanx-r-1-2",
+   "name": "Proximal phalanx of right thumb",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24450",
+   "description": "Finger bone.",
+   "mode": "seg:finger1-2.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.31880900263786316,
+     0.7356070280075073,
+     0.14265300333499908
+    ],
+    "max": [
+     -0.29864901304244995,
+     0.7671980261802673,
+     0.16488300263881683
+    ]
+   },
+   "vertices": 160,
+   "triangles": 316
+  },
+  {
+   "id": "phalanx-r-1-3",
+   "name": "Distal phalanx of right thumb",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24459",
+   "description": "Finger bone.",
+   "mode": "seg:finger1-3.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.3239139914512634,
+     0.7191389799118042,
+     0.1571349948644638
+    ],
+    "max": [
+     -0.3102630078792572,
+     0.7421659827232361,
+     0.1733579933643341
+    ]
+   },
+   "vertices": 119,
+   "triangles": 234
+  },
+  {
+   "id": "phalanx-r-2-1",
+   "name": "Proximal phalanx of right index finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24451",
+   "description": "Finger bone.",
+   "mode": "seg:finger2-1.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.30276501178741455,
+     0.6858189702033997,
+     0.1340930014848709
+    ],
+    "max": [
+     -0.28095200657844543,
+     0.7231969833374023,
+     0.15675799548625946
+    ]
+   },
+   "vertices": 193,
+   "triangles": 382
+  },
+  {
+   "id": "phalanx-r-2-2",
+   "name": "Middle phalanx of right index finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24455",
+   "description": "Finger bone.",
+   "mode": "seg:finger2-2.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.3089999854564667,
+     0.6710060238838196,
+     0.15130899846553802
+    ],
+    "max": [
+     -0.29440000653266907,
+     0.6914759874343872,
+     0.17208300530910492
+    ]
+   },
+   "vertices": 133,
+   "triangles": 262
+  },
+  {
+   "id": "phalanx-r-2-3",
+   "name": "Distal phalanx of right index finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24460",
+   "description": "Finger bone.",
+   "mode": "seg:finger2-3.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.3113679885864258,
+     0.6618459820747375,
+     0.1696469932794571
+    ],
+    "max": [
+     -0.3014250099658966,
+     0.6756889820098877,
+     0.18672999739646912
+    ]
+   },
+   "vertices": 107,
+   "triangles": 210
+  },
+  {
+   "id": "phalanx-r-3-1",
+   "name": "Proximal phalanx of right middle finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24452",
+   "description": "Finger bone.",
+   "mode": "seg:finger3-1.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.2774139940738678,
+     0.6842809915542603,
+     0.135112002491951
+    ],
+    "max": [
+     -0.25920799374580383,
+     0.7248610258102417,
+     0.16420100629329681
+    ]
+   },
+   "vertices": 231,
+   "triangles": 458
+  },
+  {
+   "id": "phalanx-r-3-2",
+   "name": "Middle phalanx of right middle finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24456",
+   "description": "Finger bone.",
+   "mode": "seg:finger3-2.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.2802020013332367,
+     0.6624569892883301,
+     0.15779900550842285
+    ],
+    "max": [
+     -0.2665880024433136,
+     0.687807023525238,
+     0.18093399703502655
+    ]
+   },
+   "vertices": 171,
+   "triangles": 338
+  },
+  {
+   "id": "phalanx-r-3-3",
+   "name": "Distal phalanx of right middle finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24461",
+   "description": "Finger bone.",
+   "mode": "seg:finger3-3.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.28091201186180115,
+     0.6530669927597046,
+     0.1782049983739853
+    ],
+    "max": [
+     -0.2713649868965149,
+     0.6665310263633728,
+     0.1954279989004135
+    ]
+   },
+   "vertices": 88,
+   "triangles": 172
+  },
+  {
+   "id": "phalanx-r-4-1",
+   "name": "Proximal phalanx of right ring finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24453",
+   "description": "Finger bone.",
+   "mode": "seg:finger4-1.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.25382399559020996,
+     0.6899679899215698,
+     0.13565799593925476
+    ],
+    "max": [
+     -0.24059100449085236,
+     0.7289320230484009,
+     0.16197699308395386
+    ]
+   },
+   "vertices": 190,
+   "triangles": 376
+  },
+  {
+   "id": "phalanx-r-4-2",
+   "name": "Middle phalanx of right ring finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24457",
+   "description": "Finger bone.",
+   "mode": "seg:finger4-2.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.2542929947376251,
+     0.669704020023346,
+     0.15653599798679352
+    ],
+    "max": [
+     -0.2427629977464676,
+     0.6936039924621582,
+     0.18056699633598328
+    ]
+   },
+   "vertices": 158,
+   "triangles": 312
+  },
+  {
+   "id": "phalanx-r-4-3",
+   "name": "Distal phalanx of right ring finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24462",
+   "description": "Finger bone.",
+   "mode": "seg:finger4-3.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.25361400842666626,
+     0.6648690104484558,
+     0.1787170022726059
+    ],
+    "max": [
+     -0.24528099596500397,
+     0.6740080118179321,
+     0.1943800002336502
+    ]
+   },
+   "vertices": 58,
+   "triangles": 112
+  },
+  {
+   "id": "phalanx-r-5-1",
+   "name": "Proximal phalanx of right little finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24454",
+   "description": "Finger bone.",
+   "mode": "seg:finger5-1.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.23632900416851044,
+     0.7033560276031494,
+     0.13872100412845612
+    ],
+    "max": [
+     -0.2221519947052002,
+     0.7359560132026672,
+     0.15952299535274506
+    ]
+   },
+   "vertices": 159,
+   "triangles": 314
+  },
+  {
+   "id": "phalanx-r-5-2",
+   "name": "Middle phalanx of right little finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24458",
+   "description": "Finger bone.",
+   "mode": "seg:finger5-2.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.23054499924182892,
+     0.6875699758529663,
+     0.15482300519943237
+    ],
+    "max": [
+     -0.21893499791622162,
+     0.7071549892425537,
+     0.1714390069246292
+    ]
+   },
+   "vertices": 106,
+   "triangles": 208
+  },
+  {
+   "id": "phalanx-r-5-3",
+   "name": "Distal phalanx of right little finger",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24463",
+   "description": "Finger bone.",
+   "mode": "seg:finger5-3.R",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.22720299661159515,
+     0.6767489910125732,
+     0.1681710034608841
+    ],
+    "max": [
+     -0.21889500319957733,
+     0.6892769932746887,
+     0.18187299370765686
+    ]
+   },
+   "vertices": 95,
+   "triangles": 186
+  },
+  {
+   "id": "hip-bone-r",
+   "name": "Right hip bone",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA16586",
+   "description": "Pelvic bone (ilium, ischium, pubis). Pelvic fractures can cause life-threatening haemorrhage.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bone": "root",
+   "bounds": {
+    "min": [
+     -0.14487199485301971,
+     0.7521529793739319,
+     0.0011187799973413348
+    ],
+    "max": [
+     -0.002790299942716956,
+     0.9578689932823181,
+     0.13901899755001068
+    ]
+   },
+   "vertices": 1155,
+   "triangles": 2310
+  },
+  {
+   "id": "femur-r",
+   "name": "Right femur",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24474",
+   "description": "Thigh bone; a femoral shaft fracture can conceal 1–1.5 L of blood.",
+   "mode": "seg:thighR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.15013399720191956,
+     0.368149995803833,
+     0.04953020066022873
+    ],
+    "max": [
+     -0.03189430013298988,
+     0.8341370224952698,
+     0.11193899810314178
+    ]
+   },
+   "vertices": 1121,
+   "triangles": 2238
+  },
+  {
+   "id": "patella-r",
+   "name": "Right patella",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaId": "FMA24486",
+   "description": "Kneecap.",
+   "mode": "seg:thighR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.10228800028562546,
+     0.3614859879016876,
+     0.10099200159311295
+    ],
+    "max": [
+     -0.06062079966068268,
+     0.40079599618911743,
+     0.12272699922323227
+    ]
+   },
+   "vertices": 154,
+   "triangles": 304
+  },
+  {
+   "id": "tibia-fibula-r",
+   "name": "Right tibia and fibula",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24477",
+    "FMA24480"
+   ],
+   "description": "Leg bones; the flat anteromedial proximal tibia is the commonest intraosseous access site.",
+   "mode": "seg:legR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.12016499787569046,
+     -0.025279900059103966,
+     0.04848739877343178
+    ],
+    "max": [
+     -0.03521599993109703,
+     0.3739199936389923,
+     0.11483500152826309
+    ]
+   },
+   "vertices": 1011,
+   "triangles": 2014
+  },
+  {
+   "id": "foot-bones-r",
+   "name": "Right foot bones",
+   "layer": "skeleton",
+   "system": "Skeletal",
+   "fmaIds": [
+    "FMA24482",
+    "FMA24497",
+    "FMA24500",
+    "FMA24528",
+    "FMA24521",
+    "FMA24523",
+    "FMA24525",
+    "FMA24507",
+    "FMA24509",
+    "FMA24511",
+    "FMA24513",
+    "FMA24515",
+    "FMA43253",
+    "FMA32650",
+    "FMA32634",
+    "FMA32642",
+    "FMA32652",
+    "FMA32636",
+    "FMA32644",
+    "FMA32654",
+    "FMA32638",
+    "FMA32646",
+    "FMA32656",
+    "FMA32640",
+    "FMA230986",
+    "FMA32658"
+   ],
+   "description": "Tarsal, metatarsal and toe bones.",
+   "mode": "seg:footR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.1693270057439804,
+     -0.07039230316877365,
+     0.02400510013103485
+    ],
+    "max": [
+     -0.04487580060958862,
+     0.0031109300907701254,
+     0.2360440045595169
+    ]
+   },
+   "vertices": 5105,
+   "triangles": 10106
+  },
+  {
+   "id": "pectoralis-major-l",
+   "name": "Left pectoralis major",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaIds": [
+    "FMA79980",
+    "FMA45875"
+   ],
+   "description": "Large chest muscle; an accessory muscle of inspiration when the arms are fixed.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.004815570078790188,
+     1.1047799587249756,
+     0.08100000023841858
+    ],
+    "max": [
+     0.18784800171852112,
+     1.3137999773025513,
+     0.21935300529003143
+    ]
+   },
+   "vertices": 2370,
+   "triangles": 4734
+  },
+  {
+   "id": "pectoralis-minor-l",
+   "name": "Left pectoralis minor",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13376",
+   "description": "Lifts the ribs during forced inspiration.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.0697999969124794,
+     1.1816600561141968,
+     0.08034919947385788
+    ],
+    "max": [
+     0.13012799620628357,
+     1.3266700506210327,
+     0.1730470061302185
+    ]
+   },
+   "vertices": 1536,
+   "triangles": 3040
+  },
+  {
+   "id": "serratus-anterior-l",
+   "name": "Left serratus anterior",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13399",
+   "description": "Protracts the scapula; lies over the ribs at the chest-drain \"safe triangle\".",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.05805959925055504,
+     1.078160047531128,
+     -0.005200000014156103
+    ],
+    "max": [
+     0.1443919986486435,
+     1.3483799695968628,
+     0.15749000012874603
+    ]
+   },
+   "vertices": 3447,
+   "triangles": 6890
+  },
+  {
+   "id": "external-oblique-l",
+   "name": "Left external oblique",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13337",
+   "description": "Abdominal wall muscle; recruited for active (forced) expiration.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.0034485699143260717,
+     0.7937840223312378,
+     0.03702079877257347
+    ],
+    "max": [
+     0.14082300662994385,
+     1.2108399868011475,
+     0.21869799494743347
+    ]
+   },
+   "vertices": 3521,
+   "triangles": 7036
+  },
+  {
+   "id": "rhomboids-l",
+   "name": "Left rhomboids",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaIds": [
+    "FMA13382",
+    "FMA13384"
+   ],
+   "description": "Retract the scapula.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.0007761020096950233,
+     1.18818998336792,
+     -0.006092209834605455
+    ],
+    "max": [
+     0.0893947035074234,
+     1.3874399662017822,
+     0.03607640042901039
+    ]
+   },
+   "vertices": 1184,
+   "triangles": 2356
+  },
+  {
+   "id": "levator-scapulae-l",
+   "name": "Left levator scapulae",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA32541",
+   "description": "Elevates the scapula.",
+   "mode": "neck",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.021074799820780754,
+     1.3093199729919434,
+     0.012087300419807434
+    ],
+    "max": [
+     0.08107859641313553,
+     1.468559980392456,
+     0.08245349675416946
+    ]
+   },
+   "vertices": 797,
+   "triangles": 1592
+  },
+  {
+   "id": "subclavius-l",
+   "name": "Left subclavius",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13411",
+   "description": "Small muscle beneath the clavicle.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.03428800031542778,
+     1.311400055885315,
+     0.07411450147628784
+    ],
+    "max": [
+     0.10466700047254562,
+     1.3428599834442139,
+     0.13487400114536285
+    ]
+   },
+   "vertices": 530,
+   "triangles": 1056
+  },
+  {
+   "id": "transversus-thoracis-l",
+   "name": "Left transversus thoracis",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA9762",
+   "description": "Thin muscle on the inner anterior chest wall.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.0024724500253796577,
+     1.1434500217437744,
+     0.15551599860191345
+    ],
+    "max": [
+     0.08957420289516449,
+     1.288409948348999,
+     0.20952099561691284
+    ]
+   },
+   "vertices": 1089,
+   "triangles": 2218
+  },
+  {
+   "id": "psoas-l",
+   "name": "Left psoas major",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA22343",
+   "description": "Hip flexor running beside the lumbar spine.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.0074751898646354675,
+     0.7354660034179688,
+     0.05313489958643913
+    ],
+    "max": [
+     0.11368200182914734,
+     1.0987399816513062,
+     0.11956600099802017
+    ]
+   },
+   "vertices": 737,
+   "triangles": 1470
+  },
+  {
+   "id": "piriformis-l",
+   "name": "Left piriformis",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA22341",
+   "description": "Deep gluteal muscle.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.02573220059275627,
+     0.806056022644043,
+     0.012082199566066265
+    ],
+    "max": [
+     0.1370600014925003,
+     0.8724030256271362,
+     0.07201860100030899
+    ]
+   },
+   "vertices": 369,
+   "triangles": 734
+  },
+  {
+   "id": "obturator-internus-l",
+   "name": "Left obturator internus",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA22325",
+   "description": "Lateral rotator of the hip lining the pelvic wall.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.0215332992374897,
+     0.7703729867935181,
+     0.029343100264668465
+    ],
+    "max": [
+     0.1190510019659996,
+     0.8274940252304077,
+     0.10709600150585175
+    ]
+   },
+   "vertices": 733,
+   "triangles": 1462
+  },
+  {
+   "id": "anconeus-l",
+   "name": "Left anconeus",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA37706",
+   "description": "Small elbow extensor.",
+   "mode": "seg:forearmL",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.206386998295784,
+     0.9595329761505127,
+     0.041822098195552826
+    ],
+    "max": [
+     0.22930799424648285,
+     1.0608899593353271,
+     0.06701800227165222
+    ]
+   },
+   "vertices": 348,
+   "triangles": 692
+  },
+  {
+   "id": "pectoralis-major-r",
+   "name": "Right pectoralis major",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaIds": [
+    "FMA79979",
+    "FMA45874"
+   ],
+   "description": "Large chest muscle; an accessory muscle of inspiration when the arms are fixed.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.1875,
+     1.1047799587249756,
+     0.08100000023841858
+    ],
+    "max": [
+     -0.004815570078790188,
+     1.3137999773025513,
+     0.21935300529003143
+    ]
+   },
+   "vertices": 2366,
+   "triangles": 4726
+  },
+  {
+   "id": "pectoralis-minor-r",
+   "name": "Right pectoralis minor",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13375",
+   "description": "Lifts the ribs during forced inspiration.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.13012799620628357,
+     1.1816600561141968,
+     0.08034919947385788
+    ],
+    "max": [
+     -0.0697999969124794,
+     1.3266700506210327,
+     0.1730470061302185
+    ]
+   },
+   "vertices": 1545,
+   "triangles": 3058
+  },
+  {
+   "id": "serratus-anterior-r",
+   "name": "Right serratus anterior",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13398",
+   "description": "Protracts the scapula; lies over the ribs at the chest-drain \"safe triangle\".",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.1443919986486435,
+     1.078160047531128,
+     -0.005200000014156103
+    ],
+    "max": [
+     -0.05805959925055504,
+     1.3483799695968628,
+     0.1573999971151352
+    ]
+   },
+   "vertices": 3410,
+   "triangles": 6816
+  },
+  {
+   "id": "external-oblique-r",
+   "name": "Right external oblique",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13336",
+   "description": "Abdominal wall muscle; recruited for active (forced) expiration.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.14082300662994385,
+     0.7937610149383545,
+     0.03702079877257347
+    ],
+    "max": [
+     -0.0035081501118838787,
+     1.2115800380706787,
+     0.2187660038471222
+    ]
+   },
+   "vertices": 3533,
+   "triangles": 7060
+  },
+  {
+   "id": "rhomboids-r",
+   "name": "Right rhomboids",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaIds": [
+    "FMA13381",
+    "FMA13383"
+   ],
+   "description": "Retract the scapula.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.0893947035074234,
+     1.18818998336792,
+     -0.006092209834605455
+    ],
+    "max": [
+     0.0007761020096950233,
+     1.3874399662017822,
+     0.03607640042901039
+    ]
+   },
+   "vertices": 1186,
+   "triangles": 2360
+  },
+  {
+   "id": "levator-scapulae-r",
+   "name": "Right levator scapulae",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA32540",
+   "description": "Elevates the scapula.",
+   "mode": "neck",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.08107859641313553,
+     1.3093199729919434,
+     0.012087300419807434
+    ],
+    "max": [
+     -0.021074799820780754,
+     1.468559980392456,
+     0.08245349675416946
+    ]
+   },
+   "vertices": 791,
+   "triangles": 1582
+  },
+  {
+   "id": "subclavius-r",
+   "name": "Right subclavius",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA13412",
+   "description": "Small muscle beneath the clavicle.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.10466700047254562,
+     1.311460018157959,
+     0.07411450147628784
+    ],
+    "max": [
+     -0.03428800031542778,
+     1.3428599834442139,
+     0.13487400114536285
+    ]
+   },
+   "vertices": 532,
+   "triangles": 1060
+  },
+  {
+   "id": "transversus-thoracis-r",
+   "name": "Right transversus thoracis",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA9761",
+   "description": "Thin muscle on the inner anterior chest wall.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.08957420289516449,
+     1.1434500217437744,
+     0.15551599860191345
+    ],
+    "max": [
+     -0.0024724500253796577,
+     1.288409948348999,
+     0.20952099561691284
+    ]
+   },
+   "vertices": 1085,
+   "triangles": 2212
+  },
+  {
+   "id": "psoas-r",
+   "name": "Right psoas major",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA22342",
+   "description": "Hip flexor running beside the lumbar spine.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.11368200182914734,
+     0.7354660034179688,
+     0.05313489958643913
+    ],
+    "max": [
+     -0.0074751898646354675,
+     1.0987399816513062,
+     0.11956600099802017
+    ]
+   },
+   "vertices": 737,
+   "triangles": 1470
+  },
+  {
+   "id": "piriformis-r",
+   "name": "Right piriformis",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA22340",
+   "description": "Deep gluteal muscle.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.1370600014925003,
+     0.806056022644043,
+     0.012082199566066265
+    ],
+    "max": [
+     -0.02573220059275627,
+     0.8724030256271362,
+     0.07201860100030899
+    ]
+   },
+   "vertices": 369,
+   "triangles": 734
+  },
+  {
+   "id": "obturator-internus-r",
+   "name": "Right obturator internus",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA22324",
+   "description": "Lateral rotator of the hip lining the pelvic wall.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.1190510019659996,
+     0.7703729867935181,
+     0.029343100264668465
+    ],
+    "max": [
+     -0.0215332992374897,
+     0.8274940252304077,
+     0.10709600150585175
+    ]
+   },
+   "vertices": 732,
+   "triangles": 1460
+  },
+  {
+   "id": "anconeus-r",
+   "name": "Right anconeus",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA37705",
+   "description": "Small elbow extensor.",
+   "mode": "seg:forearmR",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.22930799424648285,
+     0.9595329761505127,
+     0.041822098195552826
+    ],
+    "max": [
+     -0.206386998295784,
+     1.0608899593353271,
+     0.06701800227165222
+    ]
+   },
+   "vertices": 349,
+   "triangles": 694
+  },
+  {
+   "id": "brachialis-l",
+   "name": "Left brachialis",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA37669",
+   "description": "Elbow flexor lying under biceps.",
+   "mode": "seg:upperArmL",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.17638500034809113,
+     0.9953609704971313,
+     0.060569699853658676
+    ],
+    "max": [
+     0.2351209968328476,
+     1.2201999425888062,
+     0.08639589697122574
+    ]
+   },
+   "vertices": 438,
+   "triangles": 872
+  },
+  {
+   "id": "coracobrachialis-l",
+   "name": "Left coracobrachialis",
+   "layer": "muscle",
+   "system": "Muscular",
+   "fmaId": "FMA37666",
+   "description": "Flexes and adducts the arm.",
+   "mode": "seg:upperArmL",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.13015100359916687,
+     1.1701300144195557,
+     0.06686049699783325
+    ],
+    "max": [
+     0.1894260048866272,
+     1.3278700113296509,
+     0.106174997985363
+    ]
+   },
+   "vertices": 136,
+   "triangles": 268
+  },
+  {
+   "id": "cephalic-vein-l",
+   "name": "Left cephalic vein",
+   "layer": "superficial",
+   "system": "Superficial veins",
+   "fmaId": "FMA13326",
+   "description": "Superficial vein on the lateral forearm and arm; a common peripheral IV site.",
+   "channel": "veins",
+   "mode": "limb:L",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.10685300081968307,
+     0.774495005607605,
+     0.07772000133991241
+    ],
+    "max": [
+     0.27900800108909607,
+     1.3268200159072876,
+     0.13169099390506744
+    ]
+   },
+   "vertices": 1374,
+   "triangles": 2744
+  },
+  {
+   "id": "basilic-vein-l",
+   "name": "Left basilic vein",
+   "layer": "superficial",
+   "system": "Superficial veins",
+   "fmaId": "FMA22910",
+   "description": "Superficial vein on the medial forearm; with the median cubital vein it forms the antecubital IV/venepuncture site.",
+   "channel": "veins",
+   "mode": "limb:L",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.15101200342178345,
+     0.788864016532898,
+     0.06283120065927505
+    ],
+    "max": [
+     0.23546400666236877,
+     1.2372299432754517,
+     0.11480499804019928
+    ]
+   },
+   "vertices": 1102,
+   "triangles": 2200
+  },
+  {
+   "id": "superficial-epigastric-l",
+   "name": "Left superficial epigastric artery",
+   "layer": "superficial",
+   "system": "Superficial vessels",
+   "fmaId": "FMA20736",
+   "description": "Superficial artery of the lower abdominal wall.",
+   "channel": "arteries",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.03291879966855049,
+     0.8101289868354797,
+     0.1474979966878891
+    ],
+    "max": [
+     0.06617800146341324,
+     0.9585490226745605,
+     0.20038199424743652
+    ]
+   },
+   "vertices": 526,
+   "triangles": 1048
+  },
+  {
+   "id": "iliotibial-tract-l",
+   "name": "Left iliotibial tract",
+   "layer": "superficial",
+   "system": "Fascia",
+   "fmaId": "FMA58777",
+   "description": "Thick band of fascia on the lateral thigh.",
+   "mode": "seg:thighL",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.09180229902267456,
+     0.3142940104007721,
+     0.03268110007047653
+    ],
+    "max": [
+     0.16251899302005768,
+     0.9451220035552979,
+     0.11337000131607056
+    ]
+   },
+   "vertices": 1718,
+   "triangles": 3434
+  },
+  {
+   "id": "flexor-retinaculum-l",
+   "name": "Left flexor retinaculum",
+   "layer": "superficial",
+   "system": "Fascia",
+   "fmaId": "FMA40121",
+   "description": "Roof of the carpal tunnel.",
+   "mode": "seg:handL",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.23403100669384003,
+     0.7794790267944336,
+     0.12686499953269958
+    ],
+    "max": [
+     0.27091899514198303,
+     0.806430995464325,
+     0.14080600440502167
+    ]
+   },
+   "vertices": 810,
+   "triangles": 1628
+  },
+  {
+   "id": "cephalic-vein-r",
+   "name": "Right cephalic vein",
+   "layer": "superficial",
+   "system": "Superficial veins",
+   "fmaId": "FMA13325",
+   "description": "Superficial vein on the lateral forearm and arm; a common peripheral IV site.",
+   "channel": "veins",
+   "mode": "limb:R",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.27904099225997925,
+     0.7745050191879272,
+     0.07767949998378754
+    ],
+    "max": [
+     -0.10689499974250793,
+     1.3268200159072876,
+     0.13172300159931183
+    ]
+   },
+   "vertices": 1359,
+   "triangles": 2714
+  },
+  {
+   "id": "basilic-vein-r",
+   "name": "Right basilic vein",
+   "layer": "superficial",
+   "system": "Superficial veins",
+   "fmaId": "FMA22909",
+   "description": "Superficial vein on the medial forearm; with the median cubital vein it forms the antecubital IV/venepuncture site.",
+   "channel": "veins",
+   "mode": "limb:R",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.23547899723052979,
+     0.7888579964637756,
+     0.06286630034446716
+    ],
+    "max": [
+     -0.15103399753570557,
+     1.237239956855774,
+     0.11478400230407715
+    ]
+   },
+   "vertices": 1091,
+   "triangles": 2178
+  },
+  {
+   "id": "superficial-epigastric-r",
+   "name": "Right superficial epigastric artery",
+   "layer": "superficial",
+   "system": "Superficial vessels",
+   "fmaId": "FMA20735",
+   "description": "Superficial artery of the lower abdominal wall.",
+   "channel": "arteries",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.06617610156536102,
+     0.8060510158538818,
+     0.13661900162696838
+    ],
+    "max": [
+     -0.03292530030012131,
+     0.9585520029067993,
+     0.2003290057182312
+    ]
+   },
+   "vertices": 586,
+   "triangles": 1168
+  },
+  {
+   "id": "iliotibial-tract-r",
+   "name": "Right iliotibial tract",
+   "layer": "superficial",
+   "system": "Fascia",
+   "fmaId": "FMA58776",
+   "description": "Thick band of fascia on the lateral thigh.",
+   "mode": "seg:thighR",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.16251899302005768,
+     0.3142940104007721,
+     0.03272020071744919
+    ],
+    "max": [
+     -0.09180240333080292,
+     0.9450809955596924,
+     0.1133280023932457
+    ]
+   },
+   "vertices": 1718,
+   "triangles": 3434
+  },
+  {
+   "id": "flexor-retinaculum-r",
+   "name": "Right flexor retinaculum",
+   "layer": "superficial",
+   "system": "Fascia",
+   "fmaId": "FMA40120",
+   "description": "Roof of the carpal tunnel.",
+   "mode": "seg:handR",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.27091899514198303,
+     0.7794790267944336,
+     0.12686499953269958
+    ],
+    "max": [
+     -0.23403100669384003,
+     0.806430995464325,
+     0.14080600440502167
+    ]
+   },
+   "vertices": 808,
+   "triangles": 1624
+  },
+  {
+   "id": "medial-brachial-vein-r",
+   "name": "Right medial brachial vein",
+   "layer": "superficial",
+   "system": "Superficial veins",
+   "fmaId": "FMA22935",
+   "description": "Vein accompanying the brachial artery.",
+   "channel": "veins",
+   "mode": "limb:R",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.21811600029468536,
+     1.018399953842163,
+     0.08270149677991867
+    ],
+    "max": [
+     -0.15006600320339203,
+     1.2349499464035034,
+     0.09723380208015442
+    ]
+   },
+   "vertices": 387,
+   "triangles": 770
+  },
+  {
+   "id": "heart",
+   "name": "Heart (myocardium)",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaId": "FMA7088",
+   "description": "Four-chamber pump. The left ventricle (tinted when ischaemic in the simulation) generates systemic pressure; the right ventricle perfuses the lungs.",
+   "channel": "heart",
+   "derived": true,
+   "mode": "torso",
+   "skin": "rigid",
+   "cardiac": true,
+   "bounds": {
+    "min": [
+     -0.04000462591648102,
+     1.173217535018921,
+     0.06646665185689926
+    ],
+    "max": [
+     0.08216063678264618,
+     1.282256007194519,
+     0.17894664406776428
+    ]
+   },
+   "vertices": 8636,
+   "triangles": 17264
+  },
+  {
+   "id": "coronary-arteries",
+   "name": "Coronary arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA3855",
+    "FMA74912",
+    "FMA3860",
+    "FMA3895",
+    "FMA3802",
+    "FMA3818",
+    "FMA3840",
+    "FMA3815",
+    "FMA3837",
+    "FMA3868",
+    "FMA3807",
+    "FMA3872",
+    "FMA3874",
+    "FMA3876"
+   ],
+   "description": "Supply the myocardium. Occlusion of the left anterior descending (LAD) artery causes anterior infarction.",
+   "channel": "coronary",
+   "mode": "torso",
+   "skin": "rigid",
+   "cardiac": true,
+   "bounds": {
+    "min": [
+     -0.02171199955046177,
+     1.1749500036239624,
+     0.08701249957084656
+    ],
+    "max": [
+     0.07939130067825317,
+     1.2610199451446533,
+     0.17651699483394623
+    ]
+   },
+   "vertices": 5141,
+   "triangles": 10066
+  },
+  {
+   "id": "cardiac-veins",
+   "name": "Cardiac veins",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA4706",
+    "FMA4707",
+    "FMA4713",
+    "FMA4714",
+    "FMA4712",
+    "FMA4708",
+    "FMA4716"
+   ],
+   "description": "Drain the myocardium into the right atrium via the coronary sinus.",
+   "channel": "veins",
+   "mode": "torso",
+   "skin": "rigid",
+   "cardiac": true,
+   "bounds": {
+    "min": [
+     -0.02078229933977127,
+     1.1745200157165527,
+     0.08110830187797546
+    ],
+    "max": [
+     0.07744079828262329,
+     1.2534600496292114,
+     0.17240799963474274
+    ]
+   },
+   "vertices": 3460,
+   "triangles": 6784
+  },
+  {
+   "id": "aorta",
+   "name": "Aorta",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA3736",
+    "FMA3768",
+    "FMA87217",
+    "FMA3784",
+    "FMA3789"
+   ],
+   "description": "Main systemic artery. Mean arterial pressure in the simulation refers to pressure here.",
+   "channel": "arteries",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.00682218000292778,
+     0.9467869997024536,
+     0.04510520026087761
+    ],
+    "max": [
+     0.03483780100941658,
+     1.3170900344848633,
+     0.13743899762630463
+    ]
+   },
+   "vertices": 2047,
+   "triangles": 4074
+  },
+  {
+   "id": "venae-cavae",
+   "name": "Venae cavae & brachiocephalic veins",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA4720",
+    "FMA10951",
+    "FMA4761",
+    "FMA4751",
+    "FMA4754",
+    "FMA4755"
+   ],
+   "description": "Return blood to the right atrium. Raised intrathoracic pressure (tension pneumothorax, high PEEP) impedes venous return.",
+   "channel": "veins",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.08682870119810104,
+     0.9509950280189514,
+     0.10358700156211853
+    ],
+    "max": [
+     0.028000300750136375,
+     1.3817399740219116,
+     0.13235700130462646
+    ]
+   },
+   "vertices": 1127,
+   "triangles": 2226
+  },
+  {
+   "id": "azygos",
+   "name": "Azygos & hemiazygos veins",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA4838",
+    "FMA4944"
+   ],
+   "description": "Drain the posterior thoracic wall into the superior vena cava.",
+   "channel": "veins",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.018130099400877953,
+     1.0702799558639526,
+     0.05510469898581505
+    ],
+    "max": [
+     0.024038199335336685,
+     1.2912700176239014,
+     0.11301299929618835
+    ]
+   },
+   "vertices": 1693,
+   "triangles": 3378
+  },
+  {
+   "id": "pulmonary-arteries",
+   "name": "Pulmonary trunk & arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA8612",
+    "FMA50873",
+    "FMA50872",
+    "FMA68197"
+   ],
+   "description": "Carry deoxygenated blood from the right ventricle to the lungs.",
+   "channel": "pulmonaryArteries",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.05894549936056137,
+     1.2244000434875488,
+     0.05808059871196747
+    ],
+    "max": [
+     0.0790754035115242,
+     1.2940200567245483,
+     0.15884199738502502
+    ]
+   },
+   "vertices": 1591,
+   "triangles": 3166
+  },
+  {
+   "id": "pulmonary-veins",
+   "name": "Pulmonary veins",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA49916",
+    "FMA49913",
+    "FMA49914",
+    "FMA49911"
+   ],
+   "description": "Return oxygenated blood to the left atrium; raised left atrial pressure causes pulmonary oedema.",
+   "channel": "pulmonaryVeins",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.037140801548957825,
+     1.2016199827194214,
+     0.05351810157299042
+    ],
+    "max": [
+     0.08181609958410263,
+     1.2732199430465698,
+     0.11084800213575363
+    ]
+   },
+   "vertices": 1100,
+   "triangles": 2172
+  },
+  {
+   "id": "neck-arteries",
+   "name": "Carotid, subclavian & vertebral arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA3932",
+    "FMA4058",
+    "FMA3941",
+    "FMA4062",
+    "FMA3949",
+    "FMA4694",
+    "FMA3953",
+    "FMA4066",
+    "FMA3958"
+   ],
+   "description": "Supply the brain and upper limbs; the carotid pulse is checked here.",
+   "channel": "arteries",
+   "mode": "neck",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.08217599987983704,
+     1.304319977760315,
+     0.05862079933285713
+    ],
+    "max": [
+     0.08654650300741196,
+     1.5375900268554688,
+     0.119657002389431
+    ]
+   },
+   "vertices": 1329,
+   "triangles": 2622
+  },
+  {
+   "id": "arm-arteries-l",
+   "name": "Left upper-limb arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA22692",
+    "FMA22697",
+    "FMA22734",
+    "FMA22798",
+    "FMA22813",
+    "FMA22808",
+    "FMA22766",
+    "FMA22802",
+    "FMA22805",
+    "FMA22708",
+    "FMA22713",
+    "FMA22683",
+    "FMA22687"
+   ],
+   "description": "Brachial, radial and ulnar arteries. The radial pulse is lost at low systolic pressure; arterial lines are placed in the radial artery.",
+   "channel": "arteries",
+   "mode": "limb:L",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.1401360034942627,
+     0.7911859750747681,
+     0.051718298345804214
+    ],
+    "max": [
+     0.27947598695755005,
+     1.3329299688339233,
+     0.1310569941997528
+    ]
+   },
+   "vertices": 3453,
+   "triangles": 6858
+  },
+  {
+   "id": "leg-arteries-l",
+   "name": "Left iliac & lower-limb arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA14766",
+    "FMA18807",
+    "FMA18810",
+    "FMA70250",
+    "FMA20802",
+    "FMA22508",
+    "FMA77381",
+    "FMA43897",
+    "FMA43899",
+    "FMA43917",
+    "FMA20689"
+   ],
+   "description": "Iliac, femoral and leg arteries. The femoral pulse is palpated below the inguinal ligament.",
+   "channel": "arteries",
+   "mode": "limb:LL",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     0.0009080470190383494,
+     -0.04134019836783409,
+     0.011719799600541592
+    ],
+    "max": [
+     0.12052100151777267,
+     1.0304399728775024,
+     0.18535099923610687
+    ]
+   },
+   "vertices": 4872,
+   "triangles": 9700
+  },
+  {
+   "id": "iliac-veins-l",
+   "name": "Left iliac veins",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA21388",
+    "FMA18886",
+    "FMA18888"
+   ],
+   "description": "Drain the pelvis and lower limb into the inferior vena cava.",
+   "channel": "veins",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.0149897001683712,
+     0.7894499897956848,
+     -0.010068300180137157
+    ],
+    "max": [
+     0.0571351982653141,
+     0.9651529788970947,
+     0.15051299333572388
+    ]
+   },
+   "vertices": 861,
+   "triangles": 1690
+  },
+  {
+   "id": "arm-arteries-r",
+   "name": "Right upper-limb arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA22691",
+    "FMA22696",
+    "FMA22733",
+    "FMA22797",
+    "FMA22812",
+    "FMA22807",
+    "FMA22764",
+    "FMA22801",
+    "FMA22804",
+    "FMA22707",
+    "FMA22712",
+    "FMA22682",
+    "FMA22685"
+   ],
+   "description": "Brachial, radial and ulnar arteries. The radial pulse is lost at low systolic pressure; arterial lines are placed in the radial artery.",
+   "channel": "arteries",
+   "mode": "limb:R",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.2795020043849945,
+     0.7912939786911011,
+     0.05172650143504143
+    ],
+    "max": [
+     -0.1402049958705902,
+     1.3329399824142456,
+     0.1310659945011139
+    ]
+   },
+   "vertices": 3396,
+   "triangles": 6742
+  },
+  {
+   "id": "leg-arteries-r",
+   "name": "Right iliac & lower-limb arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA14765",
+    "FMA18806",
+    "FMA18809",
+    "FMA70249",
+    "FMA20801",
+    "FMA22507",
+    "FMA77380",
+    "FMA43896",
+    "FMA43898",
+    "FMA43916",
+    "FMA20688"
+   ],
+   "description": "Iliac, femoral and leg arteries. The femoral pulse is palpated below the inguinal ligament.",
+   "channel": "arteries",
+   "mode": "limb:RL",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.12054300308227539,
+     -0.041331298649311066,
+     0.027452200651168823
+    ],
+    "max": [
+     0.010176699608564377,
+     1.0304499864578247,
+     0.1852560043334961
+    ]
+   },
+   "vertices": 4861,
+   "triangles": 9678
+  },
+  {
+   "id": "iliac-veins-r",
+   "name": "Right iliac veins",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA21387",
+    "FMA18885",
+    "FMA18887"
+   ],
+   "description": "Drain the pelvis and lower limb into the inferior vena cava.",
+   "channel": "veins",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.052122000604867935,
+     0.7888200283050537,
+     -0.0006259329966269433
+    ],
+    "max": [
+     -0.0035885500255972147,
+     0.9646070003509521,
+     0.1515910029411316
+    ]
+   },
+   "vertices": 856,
+   "triangles": 1680
+  },
+  {
+   "id": "visceral-arteries",
+   "name": "Visceral arteries",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA14812",
+    "FMA50737",
+    "FMA14773",
+    "FMA14771",
+    "FMA14772",
+    "FMA14768",
+    "FMA14776",
+    "FMA14749",
+    "FMA66358",
+    "FMA14750",
+    "FMA66363",
+    "FMA66364",
+    "FMA14752",
+    "FMA14753",
+    "FMA14810",
+    "FMA14811",
+    "FMA14826",
+    "FMA14815",
+    "FMA14830",
+    "FMA14831"
+   ],
+   "description": "Supply the gut, liver, spleen and kidneys; splanchnic vasoconstriction diverts blood in shock.",
+   "channel": "arteries",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.07006140053272247,
+     0.8763880133628845,
+     0.08041810244321823
+    ],
+    "max": [
+     0.10045599937438965,
+     1.126170039176941,
+     0.17945900559425354
+    ]
+   },
+   "vertices": 3308,
+   "triangles": 6876
+  },
+  {
+   "id": "portal-vein",
+   "name": "Hepatic portal vein",
+   "layer": "cardiovascular",
+   "system": "Cardiovascular",
+   "fmaIds": [
+    "FMA50735",
+    "FMA15415",
+    "FMA15414"
+   ],
+   "description": "Carries gut venous blood to the liver (first-pass metabolism of oral drugs).",
+   "channel": "veins",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.10137700289487839,
+     1.0623400211334229,
+     0.04958539828658104
+    ],
+    "max": [
+     0.05643089860677719,
+     1.1634399890899658,
+     0.19948099553585052
+    ]
+   },
+   "vertices": 2792,
+   "triangles": 5534
+  },
+  {
+   "id": "trachea",
+   "name": "Trachea",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaId": "FMA7394",
+   "description": "Windpipe; an endotracheal tube cuff sits in the mid-trachea. Tracheal deviation is a late sign of tension pneumothorax.",
+   "channel": "airways",
+   "mode": "neck",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.013124099932610989,
+     1.2850899696350098,
+     0.07736600190401077
+    ],
+    "max": [
+     0.012814500369131565,
+     1.395359992980957,
+     0.11013100296258926
+    ]
+   },
+   "vertices": 1717,
+   "triangles": 3430
+  },
+  {
+   "id": "main-bronchi",
+   "name": "Main bronchi",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaIds": [
+    "FMA7396",
+    "FMA68418"
+   ],
+   "description": "The right main bronchus is steeper — a tube advanced too far enters it.",
+   "channel": "airways",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.050419099628925323,
+     1.2040599584579468,
+     0.06100140139460564
+    ],
+    "max": [
+     0.07234740257263184,
+     1.2979999780654907,
+     0.09846509993076324
+    ]
+   },
+   "vertices": 2646,
+   "triangles": 5288
+  },
+  {
+   "id": "bronchial-tree-l",
+   "name": "Left bronchial tree",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaIds": [
+    "FMA68223",
+    "FMA68225",
+    "FMA68222",
+    "FMA68226",
+    "FMA68227",
+    "FMA68228",
+    "FMA68230",
+    "FMA68231",
+    "FMA68232",
+    "FMA68233"
+   ],
+   "description": "Conducting airways; bronchospasm narrows them (wheeze, prolonged expiration).",
+   "channel": "airways",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.023219799622893333,
+     1.1248799562454224,
+     0.02035829983651638
+    ],
+    "max": [
+     0.12287700176239014,
+     1.3529800176620483,
+     0.1777839958667755
+    ]
+   },
+   "vertices": 2245,
+   "triangles": 4310
+  },
+  {
+   "id": "bronchial-tree-r",
+   "name": "Right bronchial tree",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaIds": [
+    "FMA68211",
+    "FMA68213",
+    "FMA68212",
+    "FMA68215",
+    "FMA68214",
+    "FMA68216",
+    "FMA68218",
+    "FMA68321",
+    "FMA68220",
+    "FMA68221"
+   ],
+   "description": "Conducting airways; bronchospasm narrows them (wheeze, prolonged expiration).",
+   "channel": "airways",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.11653999984264374,
+     1.1357500553131104,
+     0.024171799421310425
+    ],
+    "max": [
+     -0.008808979764580727,
+     1.34784996509552,
+     0.17380499839782715
+    ]
+   },
+   "vertices": 2642,
+   "triangles": 5072
+  },
+  {
+   "id": "lung-l",
+   "name": "Left lung",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaId": "FMA7310",
+   "description": "Two lobes plus the lingula. In the simulation it collapses as pleural air accumulates on this side.",
+   "channel": "lungLeft",
+   "derived": true,
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.004892327357083559,
+     1.1084606647491455,
+     0.005991687998175621
+    ],
+    "max": [
+     0.14234070479869843,
+     1.3721370697021484,
+     0.1948084980249405
+    ]
+   },
+   "vertices": 3586,
+   "triangles": 7168
+  },
+  {
+   "id": "lung-r",
+   "name": "Right lung",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaId": "FMA7309",
+   "description": "Three lobes. In the simulation it collapses as pleural air accumulates on this side.",
+   "channel": "lungRight",
+   "derived": true,
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.13154229521751404,
+     0.9998511075973511,
+     0.005963518284261227
+    ],
+    "max": [
+     0.02231096476316452,
+     1.3652461767196655,
+     0.1902347058057785
+    ]
+   },
+   "vertices": 4215,
+   "triangles": 8424
+  },
+  {
+   "id": "diaphragm",
+   "name": "Diaphragm",
+   "layer": "respiratory",
+   "system": "Respiratory",
+   "fmaId": "FMA13295",
+   "description": "Principal muscle of inspiration; it descends with each breath (animated from the simulated tidal volume).",
+   "channel": "diaphragm",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.12228800356388092,
+     0.9859600067138672,
+     0.025915799662470818
+    ],
+    "max": [
+     0.12084399908781052,
+     1.1925599575042725,
+     0.20530599355697632
+    ]
+   },
+   "vertices": 2316,
+   "triangles": 4636
+  },
+  {
+   "id": "esophagus",
+   "name": "Oesophagus",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA7131",
+   "description": "Lies behind the trachea — oesophageal intubation produces no chest rise and no end-tidal CO₂.",
+   "mode": "neck",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.008810630068182945,
+     1.1159900426864624,
+     0.06638730317354202
+    ],
+    "max": [
+     0.023603200912475586,
+     1.3903900384902954,
+     0.12426400184631348
+    ]
+   },
+   "vertices": 233,
+   "triangles": 462
+  },
+  {
+   "id": "stomach",
+   "name": "Stomach",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA7148",
+   "description": "Gastric insufflation during bag-mask ventilation raises aspiration risk.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.028951600193977356,
+     1.0398800373077393,
+     0.08147989958524704
+    ],
+    "max": [
+     0.10552400350570679,
+     1.1568900346755981,
+     0.19437000155448914
+    ]
+   },
+   "vertices": 892,
+   "triangles": 1780
+  },
+  {
+   "id": "duodenum",
+   "name": "Duodenum",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA7206",
+   "description": "First part of the small intestine.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.06562429666519165,
+     0.9856089949607849,
+     0.10389299690723419
+    ],
+    "max": [
+     0.0323294997215271,
+     1.0771100521087646,
+     0.15692399442195892
+    ]
+   },
+   "vertices": 908,
+   "triangles": 1812
+  },
+  {
+   "id": "jejunum",
+   "name": "Jejunum",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaIds": [
+    "FMA16981",
+    "FMA16982",
+    "FMA16983"
+   ],
+   "description": "Absorptive small intestine.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.08705390244722366,
+     0.9092069864273071,
+     0.1174900010228157
+    ],
+    "max": [
+     0.10662099719047546,
+     1.023650050163269,
+     0.18342900276184082
+    ]
+   },
+   "vertices": 2938,
+   "triangles": 5784
+  },
+  {
+   "id": "ileum",
+   "name": "Ileum",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaIds": [
+    "FMA14964",
+    "FMA14965",
+    "FMA14966",
+    "FMA11338"
+   ],
+   "description": "Terminal small intestine.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.07990840077400208,
+     0.8052899837493896,
+     0.10718200355768204
+    ],
+    "max": [
+     0.101842001080513,
+     0.9526360034942627,
+     0.1797650009393692
+    ]
+   },
+   "vertices": 3991,
+   "triangles": 7854
+  },
+  {
+   "id": "appendix",
+   "name": "Appendix",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA14542",
+   "description": "Vermiform appendix (right iliac fossa).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.08842360228300095,
+     0.8655869960784912,
+     0.0817847028374672
+    ],
+    "max": [
+     -0.018863100558519363,
+     0.8836560249328613,
+     0.12078999727964401
+    ]
+   },
+   "vertices": 223,
+   "triangles": 442
+  },
+  {
+   "id": "colon",
+   "name": "Colon",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaIds": [
+    "FMA14545",
+    "FMA14546",
+    "FMA14547"
+   ],
+   "description": "Large intestine.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.12678299844264984,
+     0.8223209977149963,
+     0.05028120055794716
+    ],
+    "max": [
+     0.11748199909925461,
+     1.0647300481796265,
+     0.19693100452423096
+    ]
+   },
+   "vertices": 4756,
+   "triangles": 9500
+  },
+  {
+   "id": "rectum",
+   "name": "Rectum",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA14544",
+   "description": "Terminal large intestine.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.026214800775051117,
+     0.7573270201683044,
+     0.011280800215899944
+    ],
+    "max": [
+     0.03543170168995857,
+     0.8738489747047424,
+     0.07357879728078842
+    ]
+   },
+   "vertices": 986,
+   "triangles": 1968
+  },
+  {
+   "id": "liver",
+   "name": "Liver",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaIds": [
+    "FMA15739",
+    "FMA15741",
+    "FMA15742",
+    "FMA15743",
+    "FMA15744",
+    "FMA15745",
+    "FMA15746",
+    "FMA13365"
+   ],
+   "description": "Metabolises lactate and many drugs; hepatic clearance in the simulation falls with liver blood flow and hepatic impairment.",
+   "channel": "liver",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.11503499746322632,
+     1.027959942817688,
+     0.043369900435209274
+    ],
+    "max": [
+     0.09436679631471634,
+     1.1830999851226807,
+     0.20234699547290802
+    ]
+   },
+   "vertices": 7683,
+   "triangles": 15332
+  },
+  {
+   "id": "gallbladder",
+   "name": "Gallbladder",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA7202",
+   "description": "Stores bile beneath the liver.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.06328170001506805,
+     1.051069974899292,
+     0.13015100359916687
+    ],
+    "max": [
+     -0.02684039995074272,
+     1.091480016708374,
+     0.17856000363826752
+    ]
+   },
+   "vertices": 1054,
+   "triangles": 2104
+  },
+  {
+   "id": "pancreas",
+   "name": "Pancreas",
+   "layer": "digestive",
+   "system": "Digestive",
+   "fmaId": "FMA7198",
+   "description": "Endocrine β-cells secrete insulin; absent insulin secretion drives diabetic ketoacidosis in the simulation.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.04790480062365532,
+     1.0043599605560303,
+     0.0954120010137558
+    ],
+    "max": [
+     0.07267440110445023,
+     1.0780999660491943,
+     0.1463789939880371
+    ]
+   },
+   "vertices": 1774,
+   "triangles": 3544
+  },
+  {
+   "id": "cerebrum-l",
+   "name": "Left cerebral hemisphere",
+   "layer": "nervous",
+   "system": "Nervous",
+   "fmaIds": [
+    "FMA72654",
+    "FMA72656",
+    "FMA72658",
+    "FMA72662",
+    "FMA72666",
+    "FMA72668",
+    "FMA72670",
+    "FMA72672",
+    "FMA72686",
+    "FMA72688",
+    "FMA72690",
+    "FMA72706",
+    "FMA72718",
+    "FMA72978",
+    "FMA72976",
+    "FMA72714",
+    "FMA260794"
+   ],
+   "description": "Cerebral cortex and white matter; consciousness falls with cerebral hypoperfusion, hypoxaemia, hypoglycaemia and sedative drugs.",
+   "channel": "brain",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.000041231200157199055,
+     1.5134999752044678,
+     -0.010329299606382847
+    ],
+    "max": [
+     0.06889340281486511,
+     1.6304600238800049,
+     0.1696770042181015
+    ]
+   },
+   "vertices": 21583,
+   "triangles": 43130
+  },
+  {
+   "id": "cerebrum-r",
+   "name": "Right cerebral hemisphere",
+   "layer": "nervous",
+   "system": "Nervous",
+   "fmaIds": [
+    "FMA72653",
+    "FMA72655",
+    "FMA72657",
+    "FMA72661",
+    "FMA72665",
+    "FMA72667",
+    "FMA72669",
+    "FMA72671",
+    "FMA72685",
+    "FMA72687",
+    "FMA72689",
+    "FMA72705",
+    "FMA72717",
+    "FMA72977",
+    "FMA72975",
+    "FMA72713",
+    "FMA260791"
+   ],
+   "description": "Cerebral cortex and white matter; consciousness falls with cerebral hypoperfusion, hypoxaemia, hypoglycaemia and sedative drugs.",
+   "channel": "brain",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.06994040310382843,
+     1.513550043106079,
+     -0.01026180014014244
+    ],
+    "max": [
+     -0.0014454700285568833,
+     1.6304199695587158,
+     0.1696690022945404
+    ]
+   },
+   "vertices": 21849,
+   "triangles": 43662
+  },
+  {
+   "id": "cerebellum",
+   "name": "Cerebellum",
+   "layer": "nervous",
+   "system": "Nervous",
+   "fmaId": "FMA67944",
+   "description": "Coordinates movement and balance.",
+   "channel": "brain",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.053900301456451416,
+     1.4872599840164185,
+     0.012202000245451927
+    ],
+    "max": [
+     0.05260299891233444,
+     1.540470004081726,
+     0.06844750046730042
+    ]
+   },
+   "vertices": 4289,
+   "triangles": 8570
+  },
+  {
+   "id": "brainstem",
+   "name": "Brainstem",
+   "layer": "nervous",
+   "system": "Nervous",
+   "fmaIds": [
+    "FMA61993",
+    "FMA67943",
+    "FMA62004"
+   ],
+   "description": "Contains the respiratory centres; opioids depress the medullary response to CO₂.",
+   "channel": "brainstem",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.021745000034570694,
+     1.4644999504089355,
+     0.05125439912080765
+    ],
+    "max": [
+     0.020421400666236877,
+     1.5455299615859985,
+     0.09698080271482468
+    ]
+   },
+   "vertices": 4576,
+   "triangles": 9128
+  },
+  {
+   "id": "diencephalon",
+   "name": "Hypothalamus & pineal",
+   "layer": "nervous",
+   "system": "Nervous",
+   "fmaIds": [
+    "FMA62008",
+    "FMA62327",
+    "FMA62033",
+    "FMA62032"
+   ],
+   "description": "The hypothalamus sets the thermoregulatory set-point (raised by pyrogens in sepsis).",
+   "channel": "brain",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.009249609895050526,
+     1.5321199893951416,
+     0.059167198836803436
+    ],
+    "max": [
+     0.007939609698951244,
+     1.552090048789978,
+     0.11017700284719467
+    ]
+   },
+   "vertices": 1681,
+   "triangles": 3322
+  },
+  {
+   "id": "spinal-cord",
+   "name": "Spinal cord",
+   "layer": "nervous",
+   "system": "Nervous",
+   "fmaId": "FMA7647",
+   "description": "Conducts motor and sensory signals; it ends at about L1–L2 in adults.",
+   "derived": true,
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.00837493035942316,
+     1.0433261394500732,
+     0.02408905327320099
+    ],
+    "max": [
+     0.00837493035942316,
+     1.4976396560668945,
+     0.07519840449094772
+    ]
+   },
+   "vertices": 1022,
+   "triangles": 2016
+  },
+  {
+   "id": "kidney-l",
+   "name": "Left kidney",
+   "layer": "organs",
+   "system": "Urinary",
+   "fmaId": "FMA7205",
+   "description": "Filters plasma; glomerular filtration in the simulation falls when renal perfusion pressure drops below autoregulation.",
+   "channel": "kidney",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     0.03284189850091934,
+     0.9844939708709717,
+     0.05959140136837959
+    ],
+    "max": [
+     0.09038300067186356,
+     1.090440034866333,
+     0.10018499940633774
+    ]
+   },
+   "vertices": 1310,
+   "triangles": 2616
+  },
+  {
+   "id": "kidney-r",
+   "name": "Right kidney",
+   "layer": "organs",
+   "system": "Urinary",
+   "fmaId": "FMA7204",
+   "description": "Filters plasma; glomerular filtration in the simulation falls when renal perfusion pressure drops below autoregulation.",
+   "channel": "kidney",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.08757539838552475,
+     0.966812014579773,
+     0.06470009684562683
+    ],
+    "max": [
+     -0.0304275993257761,
+     1.0712000131607056,
+     0.11185500025749207
+    ]
+   },
+   "vertices": 1074,
+   "triangles": 2144
+  },
+  {
+   "id": "ureters",
+   "name": "Ureters",
+   "layer": "organs",
+   "system": "Urinary",
+   "fmaIds": [
+    "FMA15572",
+    "FMA15571"
+   ],
+   "description": "Carry urine to the bladder.",
+   "mode": "torso",
+   "skin": "soft",
+   "bounds": {
+    "min": [
+     -0.072707898914814,
+     0.8112030029296875,
+     0.060388799756765366
+    ],
+    "max": [
+     0.07932750135660172,
+     1.0725699663162231,
+     0.11975099891424179
+    ]
+   },
+   "vertices": 1174,
+   "triangles": 2340
+  },
+  {
+   "id": "bladder",
+   "name": "Urinary bladder",
+   "layer": "organs",
+   "system": "Urinary",
+   "fmaId": "FMA15900",
+   "description": "Urine output is a key marker of end-organ perfusion.",
+   "channel": "bladder",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.03414659947156906,
+     0.7897319793701172,
+     0.056525301188230515
+    ],
+    "max": [
+     0.03262380138039589,
+     0.8299890160560608,
+     0.12824000418186188
+    ]
+   },
+   "vertices": 115,
+   "triangles": 226
+  },
+  {
+   "id": "adrenals",
+   "name": "Adrenal glands",
+   "layer": "organs",
+   "system": "Endocrine",
+   "fmaIds": [
+    "FMA15630",
+    "FMA15629"
+   ],
+   "description": "Secrete adrenaline and cortisol — the endogenous stress response.",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.062534399330616,
+     1.0455199480056763,
+     0.06314060091972351
+    ],
+    "max": [
+     0.07543410360813141,
+     1.1082099676132202,
+     0.10234200209379196
+    ]
+   },
+   "vertices": 1576,
+   "triangles": 3144
+  },
+  {
+   "id": "thymus",
+   "name": "Thymus",
+   "layer": "organs",
+   "system": "Endocrine / Lymphoid",
+   "fmaIds": [
+    "FMA71195",
+    "FMA71194"
+   ],
+   "description": "Lymphoid organ in the anterior mediastinum (small in adults).",
+   "mode": "torso",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.02475450001657009,
+     1.2575500011444092,
+     0.1197419986128807
+    ],
+    "max": [
+     0.021814199164509773,
+     1.3297499418258667,
+     0.15928900241851807
+    ]
+   },
+   "vertices": 897,
+   "triangles": 1786
+  },
+  {
+   "id": "pituitary",
+   "name": "Pituitary gland",
+   "layer": "organs",
+   "system": "Endocrine",
+   "fmaId": "FMA13889",
+   "description": "Releases ADH (conserves water in hypovolaemia) and ACTH.",
+   "mode": "head",
+   "skin": "rigid",
+   "bounds": {
+    "min": [
+     -0.006791099905967712,
+     1.522570013999939,
+     0.10110499709844589
+    ],
+    "max": [
+     0.005519689992070198,
+     1.535539984703064,
+     0.1105630025267601
+    ]
+   },
+   "vertices": 584,
+   "triangles": 1164
+  }
+ ]
+}

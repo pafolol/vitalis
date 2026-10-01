@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Vitalis — project brief</title>
+<style>
+  @page { size: A4; margin: 10mm 13mm 9mm; }
+  * { box-sizing: border-box; }
+  html { font-family: "Segoe UI", "Inter", Arial, sans-serif; color: #18202b; font-size: 9.1pt; line-height: 1.33; }
+  body { margin: 0; }
+  h1 { font-size: 23pt; letter-spacing: -0.5pt; margin: 0; line-height: 1.05; }
+  .sub { font-size: 11.5pt; color: #46556a; margin: 3pt 0 0; }
+  .note { margin: 7pt 0 0; padding: 4.5pt 8pt; border-left: 3pt solid #c2410c; background: #fff4ec; font-size: 8.6pt; color: #5b2a0c; }
+  h2 { font-size: 11pt; margin: 8pt 0 3.5pt; padding-bottom: 2.5pt; border-bottom: 1pt solid #cfd8e3; color: #0f4c5c; letter-spacing: 0.1pt; }
+  p { margin: 0 0 5pt; }
+  ol, ul { margin: 0 0 4pt; padding-left: 14pt; }
+  li { margin: 0 0 2.6pt; }
+  b { color: #0d1520; }
+  code { font-family: Consolas, "JetBrains Mono", monospace; font-size: 8.6pt; background: #eef2f6; padding: 0.5pt 3pt; border-radius: 2pt; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16pt; }
+  .shots { display: grid; grid-template-columns: 1fr 1fr; gap: 8pt; margin: 8pt 0 2pt; }
+  figure { margin: 0; }
+  figure img { width: 100%; height: 43mm; object-fit: cover; object-position: center 35%; display: block; border: 0.75pt solid #b9c4d2; border-radius: 3pt; }
+  figcaption { font-size: 7.8pt; color: #56657a; margin-top: 2.5pt; }
+  table { border-collapse: collapse; width: 100%; margin: 1pt 0 3pt; font-size: 8.7pt; }
+  th, td { text-align: left; vertical-align: top; padding: 2.6pt 6pt 2.6pt 0; border-bottom: 0.6pt solid #dbe2ea; }
+  th { color: #46556a; font-weight: 600; width: 21%; }
+  .nums { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6pt; margin: 4pt 0 2pt; }
+  .nums div { border: 0.75pt solid #cfd8e3; border-radius: 3pt; padding: 4pt 5pt; text-align: center; }
+  .nums b { display: block; font-size: 14pt; color: #0f4c5c; line-height: 1.1; }
+  .nums span { font-size: 7.4pt; color: #56657a; }
+  .page { break-after: page; }
+  .foot { margin-top: 6pt; font-size: 7.8pt; color: #6b7889; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <h1>Vitalis</h1>
+  <p class="sub">A real-time, procedurally generated 3D patient simulator for emergency medicine training</p>
+  <p class="note"><b>Educational simulation only.</b> Vitalis is a teaching tool. It is not a medical device or clinical decision support, and its physiology has not been clinically validated.</p>
+
+  <h2>What it is</h2>
+  <p>Vitalis puts a student in a resuscitation bay with a patient whose body is simulated continuously. There is no decision tree and no scripted outcome. The student examines, monitors, tests and treats; the patient's circulation, breathing, blood chemistry and consciousness respond through modelled mechanisms; and the diagnosis stays hidden until the debrief. Every patient is generated from a seed, so a case can be replayed exactly.</p>
+
+  <div class="shots">
+    <figure><img src="shot-case.png" alt="" /><figcaption>A patient in anaphylactic shock: live monitor, examination findings and AI conversation.</figcaption></figure>
+    <figure><img src="shot-anatomy.png" alt="" /><figcaption>Anatomy layers. The heart beats and the lungs inflate at the simulated rates.</figcaption></figure>
+  </div>
+
+  <h2>How it is used</h2>
+  <ol>
+    <li><b>Choose a case.</b> Pick one of 19 library cases, start a random one, or describe a case in plain words and let the AI write it. Titles describe the presentation only ("Itchy and breathless"), never the diagnosis.</li>
+    <li><b>Take the handover</b> from the ambulance crew and receive the patient. No vital signs appear until monitoring is attached.</li>
+    <li><b>Assess.</b> Move the camera around the 3D patient, run a primary survey, click the chest to listen with the stethoscope, feel pulses, and talk to the patient.</li>
+    <li><b>Investigate.</b> Order blood gases, bloods, a 12-lead ECG, X-ray or ultrasound. Results arrive after realistic collection and laboratory delays.</li>
+    <li><b>Treat.</b> Give oxygen, open the airway, gain IV access, give fluids, blood and drugs by dose and route, perform procedures, or run CPR and defibrillation.</li>
+    <li><b>Watch the response.</b> Run time at up to 10× speed. The patient improves, or deteriorates, depending on what was done and when.</li>
+    <li><b>End the case</b>, commit to a diagnosis, and read the debrief: the timeline, each decision with its measured effect, what was missed, and the hidden diagnosis.</li>
+  </ol>
+  <p><b>To run it:</b> <code>npm install</code>, copy <code>.env.example</code> to <code>.env</code> and add an OpenAI key (optional), then <code>npm run dev</code>. Without a key, every AI feature falls back to a scripted version.</p>
+
+  <h2>Core features</h2>
+  <div class="cols">
+    <ul>
+      <li><b>Generated patients.</b> A seed produces a person with their own body, history, medicines, allergies and resting physiology.</li>
+      <li><b>Continuous physiology.</b> Heart and circulation, lungs and gas exchange, fluids and blood, kidneys, metabolism, temperature and the nervous system all interact.</li>
+      <li><b>Real pharmacology.</b> About 50 drugs. Dose, route, body weight, organ function and blood flow all change the effect and its timing.</li>
+      <li><b>Bedside monitor.</b> ECG, pulse and CO₂ waveforms, blood pressure cycles and alarms, each only when its sensor is attached.</li>
+    </ul>
+    <ul>
+      <li><b>3D patient.</b> Breathing, skin colour, sweat, rash, facial expression and every attached device follow the simulation.</li>
+      <li><b>Anatomy layers.</b> Skeleton, organs, heart and vessels, lungs, muscle and nerves can be shown, isolated or made transparent.</li>
+      <li><b>AI patient, tutor and case writer.</b> The patient speaks only as well as their breathing and consciousness allow, and never reveals the diagnosis.</li>
+      <li><b>Debrief and replay.</b> Cases autosave, resume after a reload, and can be replayed from the seed and the list of actions.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2 style="margin-top:0">The best parts</h2>
+  <table>
+    <tr><th>The patient arrives in a computed state</th><td>Each case defines when the illness began. The engine simulates the hours before arrival (up to 24 for diabetic ketoacidosis), so the arrival vital signs, blood results and appearance are outcomes of the model, not numbers typed in by an author.</td></tr>
+    <tr><th>Wrong treatment fails for the right reason</th><td>A tourniquet on the wrong leg does not stop the bleeding. Antihistamine alone does not reverse anaphylactic shock. Calcium protects the heart in high potassium but does not lower the level. Adrenaline injected into muscle works slowly in a patient with poor circulation. None of this is scripted; it follows from the mechanisms.</td></tr>
+    <tr><th>The AI cannot change the outcome</th><td>The language model only produces text. It is given what the patient could know or feel, never the diagnosis. Cases it writes must pass the simulator's own validator, and are sent back to the model with the errors if they do not.</td></tr>
+    <tr><th>What you see is the simulation</th><td>The monitor waveforms, breath sounds, chest movement, lip colour and the beating heart in the anatomy view are all drawn from the same simulated state, at the same moment.</td></tr>
+  </table>
+
+  <h2>The most complex parts</h2>
+  <table>
+    <tr><th>Physiology engine</th><td>Written from scratch in TypeScript, running in a background thread at 10 steps per second. The mature engines (Pulse, BioGears, HumMod) are C++ or Java and have no browser build, so the engine sits behind an interface that a Pulse-backed server could replace. The circulation has two pumping sides: the left and right heart are solved together each step, which is why left heart failure floods the lungs, a collapsed lung under pressure stops blood returning to the heart, and blood loss lowers filling pressure. Low blood pressure with an organised heart rhythm (pulseless electrical activity) is not a programmed state. It emerges when the computed output is too low to produce a pulse.</td></tr>
+    <tr><th>Drug model</th><td>Each drug moves between compartments, crosses to its site of action with a delay, and acts on shared receptor channels. The body's own adrenaline and noradrenaline act on the same channels, so a beta-blocker hides the fast heart rate of blood loss, and an opioid plus a sedative stops breathing at doses that are safe separately. Naloxone competes with the opioid and wears off first, so the patient can relapse.</td></tr>
+    <tr><th>Determinism</th><td>The engine never uses the browser's random numbers. Every random event (a rhythm change, a failed cannulation, laboratory noise) comes from seeded generators whose state is saved with the case. The same seed and the same actions give an identical run, which the tests verify by comparing state hashes.</td></tr>
+    <tr><th>Tuning 14 interacting conditions</th><td>Because nothing is scripted, a change to one reflex shifts every case. Getting severe asthma to arrive breathless and fast, without making bleeding patients impossibly fast, needed the stress response and the blood pressure reflex to combine in the way they do in the body rather than simply adding up.</td></tr>
+    <tr><th>The 3D patient</th><td>The body is built per patient from an open-licence human model by blending sex, age, weight, muscle and height, then re-posed lying down. 191 anatomical structures from a separate dataset are fitted to each generated body and attached to its skeleton. Skin colour, sweat, rash, hair and clothing are generated in shaders, because no suitably licensed textures were available.</td></tr>
+  </table>
+
+  <h2>By the numbers</h2>
+  <div class="nums">
+    <div><b>19</b><span>library cases</span></div>
+    <div><b>14</b><span>modelled conditions</span></div>
+    <div><b>~50</b><span>drugs</span></div>
+    <div><b>18</b><span>tests and scans</span></div>
+    <div><b>191</b><span>anatomical structures</span></div>
+    <div><b>48</b><span>engine tests</span></div>
+    <div><b>7</b><span>browser tests</span></div>
+  </div>
+  <p style="margin-top:6pt">The engine tests cover reproducibility, physical limits, treatment effects (right and wrong), drug behaviour, case validation, save and load. The browser tests drive the real interface through a full case on desktop and tablet, and confirm that treatment changes the patient: breathing recovers after naloxone, and a chest drain prevents the cardiac arrest that otherwise follows a collapsed lung under pressure.</p>
+
+  <h2>Built with, and limits</h2>
+  <p>React, TypeScript, Vite and Tailwind; Three.js through React Three Fiber; a Node server that keeps the OpenAI key off the browser; MakeHuman (CC0) and BodyParts3D (CC BY) assets. The physiology is simplified and unvalidated, and covers adults only. Several conditions are not modelled, including pulmonary embolism, stroke and cardiac tamponade. Anatomy placement is approximate.</p>
+</section>
+
+</body>
+</html>

@@ -1,1 +1,159 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-mon-bg: #04070a;
+  --color-mon-ecg: #3ee07a;
+  --color-mon-spo2: #3fd4f0;
+  --color-mon-bp: #ff5470;
+  --color-mon-resp: #f7d154;
+  --color-mon-temp: #e6e8ec;
+  --color-mon-nibp: #f2f4f7;
+}
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0d11;
+  --surface: #11151b;
+  --surface-2: #161b22;
+  --surface-3: #1d232c;
+  --line: rgba(255, 255, 255, 0.07);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --ink: #e7eaef;
+  --ink-2: #a8b0bd;
+  --ink-3: #6d7685;
+  --accent: #46b4c8;
+  --accent-ink: #061418;
+  --accent-soft: rgba(70, 180, 200, 0.14);
+  --danger: #f0555a;
+  --danger-soft: rgba(240, 85, 90, 0.14);
+  --warn: #f2a93b;
+  --warn-soft: rgba(242, 169, 59, 0.14);
+  --good: #4cc38a;
+  --good-soft: rgba(76, 195, 138, 0.14);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #e9edf1;
+  --surface: #ffffff;
+  --surface-2: #f5f7f9;
+  --surface-3: #eceff3;
+  --line: rgba(15, 23, 32, 0.08);
+  --line-strong: rgba(15, 23, 32, 0.16);
+  --ink: #111821;
+  --ink-2: #4a5462;
+  --ink-3: #7c8594;
+  --accent: #117f93;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(17, 127, 147, 0.1);
+  --danger: #d23b40;
+  --danger-soft: rgba(210, 59, 64, 0.1);
+  --warn: #b86e00;
+  --warn-soft: rgba(184, 110, 0, 0.1);
+  --good: #1f8a58;
+  --good-soft: rgba(31, 138, 88, 0.1);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.scroll-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+.scroll-thin::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 8px;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+@keyframes alarm-flash {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0.25;
+  }
+}
+.alarm-flash {
+  animation: alarm-flash 1s steps(1) infinite;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fade-in-up {
+  animation: fade-in-up 0.25s ease-out both;
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 1.4s ease-in-out infinite;
+}

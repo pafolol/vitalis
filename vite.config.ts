@@ -6,6 +6,8 @@ import { fileURLToPath } from 'node:url';
 const apiPort = Number(process.env.PORT ?? 8787);
 
 export default defineConfig({
+  // Sub-path hosting (e.g. GitHub Pages at /vitalis/): set VITE_BASE at build time
+  base: process.env.VITE_BASE ?? '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
