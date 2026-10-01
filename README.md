@@ -105,9 +105,19 @@ The human body is built at runtime from MakeHuman data (base mesh, skeleton, ski
 
 All calls go through the OpenAI Responses API with strict structured outputs, from the Node server. The models produce text only and cannot change the simulation. No model is involved in the physiology, which is fully deterministic.
 
-### Hosted demo
+### Deployment
 
-The front end is a static site and deploys to GitHub Pages with the included workflow (`.github/workflows/pages.yml`). On a static host with no API server, every AI feature uses its scripted fallback and the rest of the simulator works in full. To enable live AI on a hosted copy, run the Node server somewhere, set `ALLOWED_ORIGIN` on it, and set the `VITE_API_BASE` repository variable to its URL.
+Live demo: https://medical.pafodev.com
+
+The whole application runs from one Node process, which serves the built front end and the AI endpoints on the same origin:
+
+```bash
+npm ci
+npm run build
+OPENAI_API_KEY=... PORT=8787 npm start
+```
+
+Put it behind any reverse proxy with HTTPS. The front end is also a plain static site (`dist/`), so it can be served from a static host on its own; in that case every AI feature uses its scripted fallback and the rest of the simulator works in full. Two build-time options cover split hosting: `VITE_BASE` for a sub-path, and `VITE_API_BASE` for an API on another origin (set `ALLOWED_ORIGIN` on the server to match).
 
 See also the [innovation statement](docs/INNOVATION.md).
 
